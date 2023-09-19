@@ -260,10 +260,30 @@ var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions
 					
 					<div class="entry-content">
 
-<h3><strong>Primordial Magnetic fields</strong></h3>
+<h3><strong>Reduced Order Modelling and SciML</strong></h3>
 
-<p>Magnetic fields are ubiquitously present in our observations of the universe. They are present around the Earth, where they are powered by Earth’s turbulent core, around the sun they are powered by the convective motion of the solar plasma, and around our galaxies due to the motion of charged particles. However, recent observations have also found hints of magnetic fields in the depths of cosmic voids, where we do not expect any significant sources of magnetic fields to be present.
-One simple and natural explanation for these cosmic magnetic fields could be that they are primordial, i.e. they were produced in the very early universe from the plasma formed after the Big Bang.
+<p>Model order reduction is a low-dimensional representation of the full-order model while keeping
+the high-fidelity features. The computational effort associated with the ROM methodologies can
+be divided into two stages: one is the offline stage generated in the High-performance Computing
+(HPC) clusters and the other one is the online stage which is computed in less powerful machines
+such as personal laptops. The offline stage generates several high-fidelity simulations to explore the
+parametric space to generate a lower-dimensional solution manifold. In the online stage, the low-
+dimensional solution manifold is retrieved for different parameter values. Depending on the strategy
+adopted for the approximation of the solution space and approach to recover the reduced space
+dynamics at the unknown parameter, different types of ROM building techniques are developed.
+The solution manifold can be approximated using linear approaches such as the Reduced Basis
+method or Proper Orthogonal Decomposition and a nonlinear approach like a convolution neural
+network. Now the governing equations are projected on the reduced space using the Galerkin
+or Petrov Galerkin method and the projected equations are solved in a similar time-marching
+way as done for the full-order model. This approach is called in Intrusive approach. Another
+alternative approach is to approximate the reduced dynamics using a black-box approach such
+as machine learning, subspace identification, and several regression and interpolation approaches.
+However, the non-intrusive approaches require a rich dataset for accurate prediction especially
+if the unknown parameter where the dataset needs to be reconstructed lies outside the training
+domain. There have been recent developments in physics-informed neural network areas where governing equations can be coupled with
+sparse datasets in a non-intrusive framework. I have recently coupled the physics-informed network with the resid-
+ual arising from a discretized equation projected on a reduced space to handle complex geometry
+and large-scale problems with the PINN framework
 </p>
 <p>I am interested in exploring novel strategies that can be used to verify (or refute) the primordial nature of the cosmic magnetic fields.
 </p>
