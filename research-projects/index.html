@@ -266,8 +266,6 @@ Non-Intrusive Approaches. There have been recent developments in physics-informe
 sparse datasets in a non-intrusive framework. I have coupled the physics-informed network with the residual arising from a discretized equation projected on a reduced space to handle complex geometry
 and large-scale problems with the PINN framework.
 </p>
-<p>I am currently coupling Opensource solvers such as OpenFOAM and projection-based ROM solver ITHACA-FV with the PINN platform.   
-</p>
 
 <div class="is-layout-flex wp-container-3 wp-block-columns">
 <div class="is-layout-flow wp-block-column" style="flex-basis:100%">
@@ -276,14 +274,15 @@ and large-scale problems with the PINN framework.
 </div>
 
 <div class="is-layout-flow wp-block-column" style="flex-basis:100%">
-<p>This work addresses the development of a physics-informed neural network (PINN) with a loss
+<p>Currently I am working on all three areas mentioned above. First, the development of a physics-informed neural network (PINN) with a loss
 term derived from a discretized time-dependent reduced-order system. In this work, first, the gov-
 erning equations are discretized using a Finite difference scheme (whereas, any other discretization
 technique can be adopted), then projected on a reduced or latent space using Proper Orthogonal
 Decomposition (POD)-Galerkin approach and next, the discretized reduced order equation is con-
 sidered as an additional loss penalty term alongside the data-driven loss function using different
-variants of deep learning approach such as Artificial neural network (ANN), Long-Short-Term Mem-
-ory based neural network (LSTM).<br></p>
+variants of deep learning approach such as Artificial neural network (ANN) termed as ANN-DisPINN, Long-Short-Term Mem-
+ory based neural network (LSTM) termed as LSTM-DisPINN. Secondly, I am developing an adaptive nonlinear filter regularization based projection based-ROM
+for the quasi-geostrophic equation which finds application in oceanographic flow. Finally, In the data-driven ROM, I have recently developed ANNGPOD which can use both numerical and experimental data for several industrial applications <br></p>
 </div>
 </div>
 
