@@ -2,470 +2,224 @@
 <html lang="en-US">
 <head>
 <meta charset="UTF-8">
-<title>
-Research projects | Rahul Halder </title>
-<link rel="profile" href="http://gmpg.org/xfn/11">
-<link rel="stylesheet" type="text/css" media="all" href="/wp-content/themes/twentyten/style.css?ver=20190507">
-<link rel="pingback" href="/xmlrpc.php">
-<meta name="robots" content="max-image-preview:large">
-<link rel="alternate" type="application/rss+xml" title="Rahul Halder &raquo; Feed" href="/feed/">
-<link rel="alternate" type="application/rss+xml" title="Rahul Halder &raquo; Comments Feed" href="/comments/feed/">
-		<!-- This site uses the Google Analytics by MonsterInsights plugin v7.18.0 - Using Analytics tracking - https://www.monsterinsights.com/ -->
-							<script src="//www.googletagmanager.com/gtag/js?id=UA-203149533-1" type="text/javascript" data-cfasync="false" async></script>
-			<script type="text/javascript" data-cfasync="false">var mi_version = '7.18.0';
-				var mi_track_user = true;
-				var mi_no_track_reason = '';
-				
-								var disableStr = 'ga-disable-UA-203149533-1';
+<title>Research projects | Rahul Halder</title>
 
-				/* Function to detect opted out users */
-				function __gtagTrackerIsOptedOut() {
-					return document.cookie.indexOf( disableStr + '=true' ) > - 1;
-				}
+<!-- keep WordPress theme CSS -->
+<link rel="stylesheet" href="/wp-content/themes/twentyten/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-				/* Disable tracking if the opt-out cookie exists. */
-				if ( __gtagTrackerIsOptedOut() ) {
-					window[disableStr] = true;
-				}
-
-				/* Opt-out function */
-				function __gtagTrackerOptout() {
-					document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
-					window[disableStr] = true;
-				}
-
-				if ( 'undefined' === typeof gaOptout ) {
-					function gaOptout() {
-						__gtagTrackerOptout();
-					}
-				}
-								window.dataLayer = window.dataLayer || [];
-				if ( mi_track_user ) {
-					function __gtagTracker() {dataLayer.push( arguments );}
-					__gtagTracker( 'js', new Date() );
-					__gtagTracker( 'set', {
-						'developer_id.dZGIzZG' : true,
-						                    });
-					__gtagTracker( 'config', 'UA-203149533-1', {
-						forceSSL:true,link_attribution:true,					} );
-										window.gtag = __gtagTracker;										(
-						function () {
-							/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
-							/* ga and __gaTracker compatibility shim. */
-							var noopfn = function () {
-								return null;
-							};
-							var newtracker = function () {
-								return new Tracker();
-							};
-							var Tracker = function () {
-								return null;
-							};
-							var p = Tracker.prototype;
-							p.get = noopfn;
-							p.set = noopfn;
-							p.send = function (){
-								var args = Array.prototype.slice.call(arguments);
-								args.unshift( 'send' );
-								__gaTracker.apply(null, args);
-							};
-							var __gaTracker = function () {
-								var len = arguments.length;
-								if ( len === 0 ) {
-									return;
-								}
-								var f = arguments[len - 1];
-								if ( typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function' ) {
-									if ( 'send' === arguments[0] ) {
-										var hitConverted, hitObject = false, action;
-										if ( 'event' === arguments[1] ) {
-											if ( 'undefined' !== typeof arguments[3] ) {
-												hitObject = {
-													'eventAction': arguments[3],
-													'eventCategory': arguments[2],
-													'eventLabel': arguments[4],
-													'value': arguments[5] ? arguments[5] : 1,
-												}
-											}
-										}
-										if ( 'pageview' === arguments[1] ) {
-											if ( 'undefined' !== typeof arguments[2] ) {
-												hitObject = {
-													'eventAction': 'page_view',
-													'page_path' : arguments[2],
-												}
-											}
-										}
-										if ( typeof arguments[2] === 'object' ) {
-											hitObject = arguments[2];
-										}
-										if ( typeof arguments[5] === 'object' ) {
-											Object.assign( hitObject, arguments[5] );
-										}
-										if ( 'undefined' !== typeof arguments[1].hitType ) {
-											hitObject = arguments[1];
-											if ( 'pageview' === hitObject.hitType ) {
-												hitObject.eventAction = 'page_view';
-											}
-										}
-										if ( hitObject ) {
-											action = 'timing' === arguments[1].hitType ? 'timing_complete' : hitObject.eventAction;
-											hitConverted = mapArgs( hitObject );
-											__gtagTracker( 'event', action, hitConverted );
-										}
-									}
-									return;
-								}
-
-								function mapArgs( args ) {
-									var arg, hit = {};
-									var gaMap = {
-										'eventCategory': 'event_category',
-										'eventAction': 'event_action',
-										'eventLabel': 'event_label',
-										'eventValue': 'event_value',
-										'nonInteraction': 'non_interaction',
-										'timingCategory': 'event_category',
-										'timingVar': 'name',
-										'timingValue': 'value',
-										'timingLabel': 'event_label',
-										'page' : 'page_path',
-										'location' : 'page_location',
-										'title' : 'page_title',
-									};
-									for ( arg in args ) {
-										if ( args.hasOwnProperty(arg) && gaMap.hasOwnProperty(arg) ) {
-											hit[gaMap[arg]] = args[arg];
-										} else {
-											hit[arg] = args[arg];
-										}
-									}
-									return hit;
-								}
-
-								try {
-									f.hitCallback();
-								} catch ( ex ) {
-								}
-							};
-							__gaTracker.create = newtracker;
-							__gaTracker.getByName = newtracker;
-							__gaTracker.getAll = function () {
-								return [];
-							};
-							__gaTracker.remove = noopfn;
-							__gaTracker.loaded = true;
-							window['__gaTracker'] = __gaTracker;
-						}
-					)();
-									} else {
-										console.log( "" );
-					( function () {
-							function __gtagTracker() {
-								return null;
-							}
-							window['__gtagTracker'] = __gtagTracker;
-							window['gtag'] = __gtagTracker;
-					} )();
-									}</script>
-				<!-- / Google Analytics by MonsterInsights -->
-		<script type="text/javascript">
-window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.1.1"}};
-/*! This file is auto-generated */
-!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode,e=(p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0),i.toDataURL());return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(p&&p.fillText)switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([129777,127995,8205,129778,127999],[129777,127995,8203,129778,127999])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
-</script>
-<style type="text/css">img.wp-smiley,
-img.emoji {
-	display: inline !important;
-	border: none !important;
-	box-shadow: none !important;
-	height: 1em !important;
-	width: 1em !important;
-	margin: 0 0.07em !important;
-	vertical-align: -0.1em !important;
-	background: none !important;
-	padding: 0 !important;
-}</style>
-	<link rel="stylesheet" id="wp-quicklatex-format-css" href="/wp-content/plugins/wp-quicklatex/css/quicklatex-format.css?ver=6.1.1" type="text/css" media="all">
-<link rel="stylesheet" id="wp-block-library-css" href="/wp-includes/css/dist/block-library/style.min.css?ver=6.1.1" type="text/css" media="all">
-<style id="wp-block-library-theme-inline-css" type="text/css">.wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:hsla(0,0%,100%,.65)}.wp-block-audio{margin:0 0 1em}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:hsla(0,0%,100%,.65)}.wp-block-embed{margin:0 0 1em}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-image{margin:0 0 1em}.wp-block-pullquote{border-top:4px solid;border-bottom:4px solid;margin-bottom:1.75em;color:currentColor}.wp-block-pullquote__citation,.wp-block-pullquote cite,.wp-block-pullquote footer{color:currentColor;text-transform:uppercase;font-size:.8125em;font-style:normal}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;position:relative;font-style:normal}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote.is-style-plain{border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-search__button{border:1px solid #ccc;padding:.375em .625em}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table{margin:"0 0 1em 0"}.wp-block-table thead{border-bottom:3px solid}.wp-block-table tfoot{border-top:3px solid}.wp-block-table td,.wp-block-table th{word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video{margin:0 0 1em}.wp-block-template-part.has-background{padding:1.25em 2.375em;margin-top:0;margin-bottom:0}</style>
-<link rel="stylesheet" id="dashicons-css" href="/wp-includes/css/dashicons.min.css?ver=6.1.1" type="text/css" media="all">
-<link rel="stylesheet" id="classic-theme-styles-css" href="/wp-includes/css/classic-themes.min.css?ver=1" type="text/css" media="all">
-<style id="global-styles-inline-css" type="text/css">body{--wp--preset--color--black: #000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #fff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--blue: #0066cc;--wp--preset--color--medium-gray: #666;--wp--preset--color--light-gray: #f1f1f1;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
-.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
-:where(.wp-block-columns.is-layout-flex){gap: 2em;}
-.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}</style>
-<link rel="stylesheet" id="twentyten-block-style-css" href="/wp-content/themes/twentyten/blocks.css?ver=20181218" type="text/css" media="all">
-<script type="text/javascript" id="monsterinsights-frontend-script-js-extra">
-/* <![CDATA[ */
-var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions":"doc,pdf,ppt,zip,xls,docx,pptx,xlsx","inbound_paths":"[{\"path\":\"\\\/go\\\/\",\"label\":\"affiliate\"},{\"path\":\"\\\/recommend\\\/\",\"label\":\"affiliate\"}]","home_url":"","hash_tracking":"false","ua":"UA-203149533-1"};
-/* ]]> */
-</script>
-<script type="text/javascript" src="/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend-gtag.min.js?ver=7.18.0" id="monsterinsights-frontend-script-js"></script>
-<script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js?ver=3.6.1" id="jquery-core-js"></script>
-<script type="text/javascript" src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
-<script type="text/javascript" src="/wp-content/plugins/wp-quicklatex/js/wp-quicklatex-frontend.js?ver=1.0" id="wp-quicklatex-frontend-js"></script>
-<link rel="https://api.w.org/" href="/wp-json/">
-<link rel="alternate" type="application/json" href="/wp-json/wp/v2/pages/72">
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml">
-<meta name="generator" content="WordPress 6.1.1">
-<link rel="canonical" href="/research-projects/">
-<link rel="shortlink" href="/?p=72">
-<link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=%2Fresearch-projects%2F">
-<link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=%2Fresearch-projects%2F#038;format=xml">
+<style>
+  /* === Custom style cleanup === */
+  .entry-content p {
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #222;
+  }
+  .entry-content h3 {
+    font-size: 22px;
+    margin-top: 1.5rem;
+    border-left: 4px solid #0073aa;
+    padding-left: 8px;
+  }
+  .entry-content strong a {
+    color: #004d80;
+    text-decoration: none;
+  }
+  .entry-content strong a:hover {
+    text-decoration: underline;
+  }
+  figure img {
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+  }
+  video {
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+  }
+  .wp-block-columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: flex-start;
+    margin: 1rem 0;
+  }
+  .wp-block-column {
+    flex: 1;
+    min-width: 300px;
+  }
+  .entry-content {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 1rem;
+    background: #fafafa;
+    border-radius: 10px;
+  }
+</style>
 </head>
 
-<body class="page-template page-template-onecolumn-page page-template-onecolumn-page-php page page-id-72 page-parent">
-<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-dark-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 0.49803921568627"></fefuncr><fefuncg type="table" tablevalues="0 0.49803921568627"></fefuncg><fefuncb type="table" tablevalues="0 0.49803921568627"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 1"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0 1"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.54901960784314 0.98823529411765"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0.71764705882353 0.25490196078431"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-red"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 1"></fefuncr><fefuncg type="table" tablevalues="0 0.27843137254902"></fefuncg><fefuncb type="table" tablevalues="0.5921568627451 0.27843137254902"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-midnight"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 0"></fefuncr><fefuncg type="table" tablevalues="0 0.64705882352941"></fefuncg><fefuncb type="table" tablevalues="0 1"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-magenta-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.78039215686275 1"></fefuncr><fefuncg type="table" tablevalues="0 0.94901960784314"></fefuncg><fefuncb type="table" tablevalues="0.35294117647059 0.47058823529412"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-green"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.65098039215686 0.40392156862745"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0.44705882352941 0.4"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-orange"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.098039215686275 1"></fefuncr><fefuncg type="table" tablevalues="0 0.66274509803922"></fefuncg><fefuncb type="table" tablevalues="0.84705882352941 0.41960784313725"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><div id="wrapper" class="hfeed">
-	<div id="header">
-		<div id="masthead">
-			<div id="branding" role="banner">
-								<div id="site-title">
-					<span>
-						<a href="/" title="Rahul Halder" rel="home">Rahul Halder</a>
-					</span>
-				</div>
-				<div id="site-description">Personal website</div>
+<body>
+<div id="wrapper" class="hfeed">
+  <div id="header">
+    <div id="masthead">
+      <div id="branding" role="banner">
+        <div id="site-title">
+          <span><a href="/" title="Rahul Halder" rel="home">Rahul Halder</a></span>
+        </div>
+        <div id="site-description">Personal website</div>
+      </div>
 
+      <div id="access" role="navigation">
+        <ul id="menu-top-menu" class="menu">
+          <li><a href="/">Home</a></li>
+          <li class="current_page_item"><a href="/research-projects/" aria-current="page">Research projects</a></li>
+          <li><a href="/wp-content/uploads/2021/10/Rahul_CV.pdf">CV</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
-<!-- #branding -->
+  <div id="main">
+    <div id="container" class="one-column">
+      <div id="content" role="main">
+        <div id="post-72" class="post-72 page type-page status-publish hentry">
+          <h1 class="entry-title">Research Projects</h1>
 
-			<div id="access" role="navigation">
-								<div class="skip-link screen-reader-text"><a href="#content" title="Skip to content">Skip to content</a></div>
-				<div class="menu-header"><ul id="menu-top-menu" class="menu">
-<li id="menu-item-40" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-40"><a href="/">Home</a></li>
-<li id="menu-item-80" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-72 current_page_item menu-item-80"><a href="/research-projects/" aria-current="page">Research projects</a></li>
-<!-- <li id="menu-item-80" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-80"><a href="/fun-projects/">Fun projects</a></li> --> 
-<li id="menu-item-284" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-284"><a href="/wp-content/uploads/2021/10/Rahul_CV.pdf">CV</a></li>
-</ul></div>			</div>
-<!-- #access -->
-		</div>
-<!-- #masthead -->
-	</div>
-<!-- #header -->
+          <div class="entry-content">
 
-	<div id="main">
+            <h3><strong>Reduced Order Modelling and Scientific Machine Learning (SciML)</strong></h3>
+            <p>
+              Model order reduction provides a low-dimensional representation of high-fidelity simulations
+              while preserving essential flow and structural dynamics. Depending on the chosen approximation
+              and projection strategy, several ROM frameworks exist — including intrusive, non-intrusive,
+              and hybrid data-driven approaches. Recent developments in physics-informed neural networks (PINNs)
+              enable coupling governing equations with sparse datasets in a non-intrusive setting.
+            </p>
 
-		<div id="container" class="one-column">
-			<div id="content" role="main">
+            <figure>
+              <img src="/wp-content/uploads/2020/05/ResearchWorkIII.png" alt="ROM schematic">
+            </figure>
 
-			
+            <p>
+              My ongoing work involves three aspects:  
+              (1) Physics-Informed Neural Networks (PINNs) that embed discretized reduced-order equations as loss terms (ANN-DisPINN, LSTM-DisPINN).  
+              (2) Adaptive nonlinear filter–regularized projection-based ROMs for quasi-geostrophic equations relevant to oceanographic flow.  
+              (3) Data-driven ROMs (ANN-GPOD) capable of integrating both numerical and experimental datasets for industrial flow configurations.
+            </p>
 
-				<div id="post-72" class="post-72 page type-page status-publish hentry">
-											<h1 class="entry-title">Research projects</h1>
-					
-					<div class="entry-content">
+            <h3><strong>Linear and Non-Linear Non-Intrusive ROM for Aeroelastic and Wave–Structure Interaction Problems</strong></h3>
+            <p>
+              During my Ph.D. at the National University of Singapore under Prof. Khoo Boo Cheong, I developed
+              several linear and nonlinear non-intrusive reduced-order models for aeroelastic systems and gust
+              load analysis. The open-source CFD platform SU2 was extended to perform coupled fluid–structure
+              simulations and modal ROM computations.
+            </p>
 
-<h3><strong>Reduced Order Modelling and SciML</strong></h3>
+            <div class="wp-block-columns">
+              <div class="wp-block-column">
+                <p>
+                  <strong><a href="https://arc.aiaa.org/doi/abs/10.2514/1.J058529" target="_blank">Signal Interpolation Augmented Linear Non-Intrusive ROM</a></strong> —
+                  A linear ROM based on subspace identification combined with the Discrete Empirical Interpolation Method (DEIM)
+                  for reconstructing distributed variables. Applied to airfoil flutter under gust excitation; the inviscid
+                  flutter boundary for NACA64A010 is shown below.
+                </p>
+              </div>
+              <div class="wp-block-column">
+                <figure>
+                  <img src="/wp-content/uploads/2020/05/Flutter_Boundary_Interpolated_Signal.png" alt="Flutter boundary result">
+                </figure>
+              </div>
+            </div>
 
-<p>Model order reduction is a low-dimensional representation of the full-order model while keeping
-the high-fidelity features. Depending on the strategy adopted for the approximation of the solution space and approach to recover the reduced space
-dynamics at the unknown parameter, different types of ROM building techniques are developed such as the physics-based method, Intrusive and purely data-driven approach,
-Non-Intrusive approaches. There have been recent developments in physics-informed neural network areas where governing equations can be coupled with
-sparse datasets in a non-intrusive framework. In the following figure, different approaches to reduced-order model development are demonstrated.
-</p>
+            <div class="wp-block-columns">
+              <div class="wp-block-column">
+                <figure>
+                  <img src="/wp-content/uploads/2020/05/LSTM_Aero.png" alt="LSTM ROM Aeroelasticity">
+                </figure>
+              </div>
+              <div class="wp-block-column">
+                <p>
+                  <strong><a href="https://arc.aiaa.org/doi/abs/10.2514/1.J059027" target="_blank">Nonlinear Non-Intrusive ROM</a></strong> —
+                  A deep learning–enhanced ROM coupling Long Short-Term Memory (LSTM) networks with DEIM for modeling viscous
+                  transonic aeroelastic phenomena.
+                </p>
+              </div>
+            </div>
 
-<div class="is-layout-flex wp-container-3 wp-block-columns">
-<div class="is-layout-flow wp-block-column" style="flex-basis:100%">
-<figure class="wp-block-image size-full is-resized"><img decoding="async" src="/wp-content/uploads/2020/05/ResearchWorkIII.png" alt="" class="wp-image-256" width="auto" height="auto"></a></figure>
+            <div class="wp-block-columns">
+              <div class="wp-block-column">
+                <p>
+                  <strong><a href="https://arc.aiaa.org/doi/abs/10.2514/1.J060344" target="_blank">Periodic Gust Effect on Aeroelastic Motion</a></strong> —
+                  Assessment of aeroelastic responses due to periodic vertical gusts impacting a pitching–plunging airfoil
+                  with trailing-edge control surfaces in transonic regimes.
+                </p>
+              </div>
+              <div class="wp-block-column">
+                <figure>
+                  <img src="/wp-content/uploads/2020/05/Aero_Gust.png" alt="Aeroelastic gust case">
+                </figure>
+              </div>
+            </div>
+
+            <p>
+              <strong><a href="https://su2foundation.org/wp-content/uploads/2021/10/halder_su2_conference_2020.pdf" target="_blank">Three-Dimensional Aeroelasticity and ROM in SU2</a></strong> —  
+              Implementation of modal analysis for linear aeroelastic ROM computation in SU2. The code enables
+              modal deflections and random excitations for 3D wings, extending SU2 beyond rigid body motion.
+            </p>
+
+            <figure>
+              <img src="/wp-content/uploads/2020/05/HAR.png" alt="3D Aeroelastic ROM visualization">
+            </figure>
+
+            <div class="wp-block-columns">
+              <div class="wp-block-column">
+                <video controls width="240">
+                  <source src="/wp-content/uploads/2020/05/WSI_II.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="wp-block-column">
+                <p>
+                  <strong><a href="https://doi.org/10.1016/j.oceaneng.2023.114511" target="_blank">Wave–Structure Interaction</a></strong> —
+                  Evaluation of LSTM-driven Non-Intrusive ROMs (NIROM) for floating-body dynamics under surface waves.
+                  Hydrodynamic forces and displacements are derived via SPH simulations to benchmark ROM performance.
+                </p>
+              </div>
+            </div>
+
+            <h3><strong>Miscellaneous</strong></h3>
+            <p>
+              Additional research includes fluid–structure interactions in microfluidic systems for bioengineering
+              applications. In particular, droplet generation in flexible microchannels mimicking cellular motion
+              through capillary networks.
+            </p>
+
+            <p>
+              <strong><a href="https://link.springer.com/article/10.1007/s10404-016-1768-4" target="_blank">Droplet Dynamics in Flexible Microchannels</a></strong> —
+              Experimental and analytical studies on pressure-actuated membrane walls for tunable droplet generation
+              and monodisperse control at high capillary numbers.
+            </p>
+
+            <figure>
+              <img src="/wp-content/uploads/2020/05/Droplet_Dynamics.png" alt="Droplet Dynamics Microchannel">
+            </figure>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer" role="contentinfo">
+    <div id="colophon">
+      <div id="site-info"><a href="/" rel="home">Rahul Halder</a></div>
+    </div>
+  </div>
 </div>
-</div>
-
-<div class="is-layout-flow wp-block-column" style="flex-basis:100%">
-<p>Currently I am working on all three areas mentioned above. First, the development of a physics-informed neural network (PINN) with a loss
-term derived from a discretized time-dependent reduced-order system. In this work, first, the governing equations are discretized using a Finite difference scheme (whereas, any other discretization technique can be adopted), then projected on a reduced or latent space using Proper Orthogonal
-Decomposition (POD)-Galerkin approach and next, the discretized reduced order equation is considered as an additional loss penalty term alongside the data-driven loss function using different
-variants of deep learning approach such as Artificial neural network (ANN) termed as ANN-DisPINN, Long-Short-Term Memory based neural network (LSTM) termed as LSTM-DisPINN. Secondly, I am developing an adaptive nonlinear filter regularization-based projection based-ROM
-for the quasi-geostrophic equation which finds application in oceanographic flow. Finally, In the data-driven ROM, I have recently developed ANNGPOD which can use both numerical and experimental data for several industrial applications <br></p>
-</div>
-</div>
-
-
-<h3><strong>Linear and Non-Linear Non-Intrusive ROM for Aeroelastic Problem and Wave-Structure Interaction</strong></h3>
-<p>I completed my Ph.D. in Mechanical Engineering, the National University of Singapore under Prof. Khoo Boo Cheong in February 2020. My Ph.D. topic was “Discrete Empirical Interpolation Method Augmented Reduced Order Modelling for Aeroelastic Systems and Gust Load Analysis”. During My Ph.D., I developed several linear and non-linear non-intrusive reduced-order models. The fluid-structural interaction code is used/modified in an open-source finite volume-based platform SU2.</p>
-
-<div class="is-layout-flex wp-container-3 wp-block-columns">
-<div class="is-layout-flow wp-block-column" style="flex-basis:66.66%">
-<p><strong><a href="https://arc.aiaa.org/doi/abs/10.2514/1.J058529" data-type="URL" data-id="https://arc.aiaa.org/doi/abs/10.2514/1.J058529" target="_blank" rel="noreferrer noopener">Signal Interpolation Augmented Linear Non-Intrusive ROM
-</a></strong>: The linear reduced-order model is based on the subspace identification method, and it is coupled with the Discrete Empirical Interpolation Method for the reconstruction of distributive variables. The linear reduced-order model is applied on an airfoil under structural and gust load excitation. The right figure demonstrates the inviscid-flutter boundary of NACA64A010 using an interpolated signal.<br></p>
-</div>
-
-<div class="is-layout-flow wp-block-column" style="flex-basis:33.33%">
-<figure class="wp-block-image size-full is-resized"><a href="https://arc.aiaa.org/doi/abs/10.2514/1.J058529"data-type="URL" data-id="https://arc.aiaa.org/doi/abs/10.2514/1.J058529" target="_blank" rel="noreferrer noopener"><img decoding="async" src="/wp-content/uploads/2020/05/Flutter_Boundary_Interpolated_Signal.png" alt="" class="wp-image-256" width="400" height="400"></a></figure>
-</div>
-</div>
-
-<div class="is-layout-flex wp-container-3 wp-block-columns">
-<div class="is-layout-flow wp-block-column" style="flex-basis:40%">
-<figure class="wp-block-image size-full is-resized"><a href="https://arc.aiaa.org/doi/abs/10.2514/1.J059027" data-type="URL" data-id="https://arc.aiaa.org/doi/abs/10.2514/1.J059027" target="_blank"><img decoding="async" src="/wp-content/uploads/2020/05/LSTM_Aero.png" alt="" class="wp-image-256" width="400" height="400"></a></figure>
-</div>
-
-
-
-<div class="is-layout-flow wp-block-column" style="flex-basis:60%">
-<p><strong><a href="https://arc.aiaa.org/doi/abs/10.2514/1.J059027" data-type="URL" data-id="https://arc.aiaa.org/doi/abs/10.2514/1.J059027" target="_blank" rel="noreferrer noopener">Nonlinear Non-intrusive Reduced Order Model</a></strong>: I have developed a nonlinear reduced-order model coupling Long Short-Term Memory-based deep learning network with Discrete Empirical Interpolation Method for the aeroelastic application in the viscous transonic regime.<br></p>
-</div>
-</div>
-
-<div class="is-layout-flex wp-container-3 wp-block-columns">
-<div class="is-layout-flow wp-block-column" style="flex-basis:66.66%">
-<p><strong><a href="https://arc.aiaa.org/doi/abs/10.2514/1.J060344" data-type="URL" data-id="https://arc.aiaa.org/doi/abs/10.2514/1.J060344" target="_blank" rel="noreferrer noopener"> Periodic Gust Effect on Aeroelastic Motion
-</a></strong>: This study assesses the aeroelastic response that could arise from a periodic vertical gust of different frequencies encountering an airfoil which consists of a trailing-edge control surface (typically used for transonic aileron-buzz studies) and an airfoil undergoing pitching and plunging aeroelastic motion in transonic flow. <br></p>
-</div>
-
-<div class="is-layout-flow wp-block-column" style="flex-basis:33.33%">
-<figure class="wp-block-image size-full is-resized"><a href="https://arc.aiaa.org/doi/abs/10.2514/1.J060344"data-type="URL" data-id="https://arc.aiaa.org/doi/abs/10.2514/1.J060344" target="_blank" rel="noreferrer noopener"><img decoding="async" src="/wp-content/uploads/2020/05/Aero_Gust.png" alt="" class="wp-image-256" width="400" height="400"></a></figure>
-</div>
-</div>
-
-
-
-<div class="is-layout-flex wp-container-6 wp-block-columns">
-<div class="is-layout-flow wp-block-column" style="flex-basis:100%">
-<p><strong><a href="https://su2foundation.org/wp-content/uploads/2021/10/halder_su2_conference_2020.pdf" data-type="URL" data-id="https://su2foundation.org/wp-content/uploads/2021/10/halder_su2_conference_2020.pdf" target="_blank" rel="noreferrer noopener">Three Dimensional Aeroelasticity and ROM</a></strong>: <p>The aim of this work is to implement the modal analysis
-platform for aeroelastic computation in the Open-Source
-CFD Solver SU2 for applying linear Reduced Order Modelling (ROM). Although the current version of SU2
-solver can handle periodic six degrees of freedom rigid movement of a solid surface immersed in a compressible flow, it
-cannot handle modal deflections or random excitations of
-a three-dimensional wing. This limitation is addressed in
-the present work in which the governing structural equations are assumed to be linear which implies that the mass
-and stiffness matrix associated with the linear structural
-equations is constant.  
-</p>
-
-<div class="is-layout-flex wp-container-3 wp-block-columns">
-<div class="is-layout-flow wp-block-column" style="flex-basis:100%">
-<figure class="wp-block-image size-full is-resized"><img decoding="async" src="/wp-content/uploads/2020/05/HAR.png" alt="" class="wp-image-256" width="auto" height="auto"></a></figure>
-</div>
-</div>
-
-
-<div class="is-layout-flex wp-container-3 wp-block-columns">
-  <div class="is-layout-flow wp-block-column" style="flex-basis: 33.33%">
-    <video controls width="200" height="200">
-      <source src="/wp-content/uploads/2020/05/WSI_II.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-</div>
-
-
-
-<div class="is-layout-flow wp-block-column" style="flex-basis:60%">
-<p><strong><a href="https://doi.org/10.1016/j.oceaneng.2023.114511" data-type="URL" data-id="https://doi.org/10.1016/j.oceaneng.2023.114511" target="_blank" rel="noreferrer noopener">Wave-Structure Interaction:</a></strong> The feasibility of using a Long Short-Term Memory (LSTM) network-driven Non-Intrusive Reduced Order Model (NIROM) to predict the dynamics of a two-dimensional box floating and interacting with surface water waves is assessed in this study. The ground for these wave-structure interactions (WSI) problems, namely box displacements and hydrodynamic forces arising from wave interaction corresponding to a particular surface wave profile, are computed using a single-phase Smoothed Particle Hydrodynamics (SPH).</p>
-</div>
-</div>
-
-<h3><strong>Miscellaneous</strong></h3>
-
-<p> Some of my previous works involves fluid-structure interaction problem involving droplet dynamics and flexible microchannel to mimic the cell motion inside the blood vessels for several cell-sorting applications in bio-medical field. </p>
-
-<div class="is-layout-flex wp-container-12 wp-block-columns">
-<div class="is-layout-flow wp-block-column" style="flex-basis:100%">
-<p><strong><a rel="noreferrer noopener" href="https://link.springer.com/article/10.1007/s10404-016-1768-4" data-type="URL" data-id="https://link.springer.com/article/10.1007/s10404-016-1768-4" target="_blank" rel="noreferrer noopener">Droplet Dynamics in Flexible Micro-Channel:</a></strong> This Work reports the droplet generation behaviour of a microfluidic droplet generator with a controllable deformable membrane wall using experiments and analytical model. The confinement at the droplet generation junction is controlled by using external pressure, which acts on the membrane, to generate droplets smaller than junction size (with other parameters fixed) and stable and monodispersed droplets even at higher capillary numbers.
-</p>
-
-<div class="is-layout-flex wp-container-3 wp-block-columns">
-<div class="is-layout-flow wp-block-column" style="flex-basis:100%">
-<figure class="wp-block-image size-full is-resized"><img decoding="async" src="/wp-content/uploads/2020/05/Droplet_Dynamics.png" alt="" class="wp-image-256" width="auto" height="auto"></a></figure>
-</div>
-</div>
-																	</div>
-<!-- .entry-content -->
-				</div>
-<!-- #post-72 -->
-
-				
-			<div id="comments">
-
-
-
-
-</div>
-<!-- #comments -->
-
-
-			</div>
-<!-- #content -->
-		</div>
-<!-- #container -->
-
-	</div>
-<!-- #main -->
-
-	<div id="footer" role="contentinfo">
-		<div id="colophon">
-
-
-
-			<div id="site-info">
-				<a href="/" title="Rahul Halder" rel="home">
-					Rahul Halder				</a>
-							</div>
-<!-- #site-info -->
-
-			<div id="site-generator">
-								<a href="https://wordpress.org/" class="imprint" title="Semantic Personal Publishing Platform">
-									</a>
-			</div>
-<!-- #site-generator -->
-
-		</div>
-<!-- #colophon -->
-	</div>
-<!-- #footer -->
-
-</div>
-<!-- #wrapper -->
-
-			<script>// Used by Gallery Custom Links to handle tenacious Lightboxes
-				jQuery(document).ready(function () {
-
-					function mgclInit() {
-						if (jQuery.fn.off) {
-							jQuery('.no-lightbox, .no-lightbox img').off('click'); // jQuery 1.7+
-						}
-						else {
-							jQuery('.no-lightbox, .no-lightbox img').unbind('click'); // < jQuery 1.7
-						}
-						jQuery('a.no-lightbox').click(mgclOnClick);
-
-						if (jQuery.fn.off) {
-							jQuery('a.set-target').off('click'); // jQuery 1.7+
-						}
-						else {
-							jQuery('a.set-target').unbind('click'); // < jQuery 1.7
-						}
-						jQuery('a.set-target').click(mgclOnClick);
-					}
-
-					function mgclOnClick() {
-						if (!this.target || this.target == '' || this.target == '_self')
-							window.location = this.href;
-						else
-							window.open(this.href,this.target);
-						return false;
-					}
-
-					// From WP Gallery Custom Links
-					// Reduce the number of  conflicting lightboxes
-					function mgclAddLoadEvent(func) {
-						var oldOnload = window.onload;
-						if (typeof window.onload != 'function') {
-							window.onload = func;
-						} else {
-							window.onload = function() {
-								oldOnload();
-								func();
-							}
-						}
-					}
-
-					mgclAddLoadEvent(mgclInit);
-					mgclInit();
-
-				});</script>
-		<style id="core-block-supports-inline-css" type="text/css">.wp-block-columns.wp-container-3,.wp-block-columns.wp-container-6,.wp-block-columns.wp-container-9,.wp-block-columns.wp-container-12{flex-wrap:nowrap;}</style>
-<script type="text/javascript" src="/wp-includes/js/comment-reply.min.js?ver=6.1.1" id="comment-reply-js"></script>
 </body>
 </html>
