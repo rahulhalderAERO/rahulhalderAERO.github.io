@@ -146,6 +146,50 @@
             </p>
             <!-- End cerebrovascular section -->
 
+            <!-- Particle-Laden Flow System Section -->
+<h4><strong>Particle-Laden Flow Systems and POD–LSTM Based Reduced Order Modelling</strong></h4>
+
+<p>
+Multiphase and particle-laden flow systems are essential to numerous industrial and natural processes, 
+ranging from fluidized beds and sprays to pollutant transport. The strong coupling between dispersed 
+and carrier phases introduces nonlinearity and multi-scale dynamics, making full-order simulations 
+computationally demanding. To alleviate this, I developed a data-driven reduced order framework 
+combining <strong>Proper Orthogonal Decomposition (POD)</strong> for spatial compression with 
+<strong>Long Short-Term Memory (LSTM)</strong> networks for nonlinear temporal prediction.
+</p>
+  <div class="wp-block-column">
+    <figure>
+      <img src="/wp-content/uploads/2020/05/animation_lagrangian.gif" alt="Particle trajectory and concentration dynamics">
+      <figcaption><em>Particle concentration and trajectory evolution using CFD-DEM</em></figcaption>
+    </figure>
+  </div>
+</div>
+
+<p>
+The approach first extracts dominant coherent structures from fully resolved simulations via POD, 
+yielding a low-dimensional latent representation of both fluid and particle quantities. 
+Subsequently, a sequence-learning LSTM model maps temporal correlations in this reduced space, 
+allowing long-horizon forecasting of velocity, vorticity, and particle distribution fields 
+without re-solving the governing equations. 
+</p>
+
+<p>
+This method provides a <strong>non-intrusive, physics-aware surrogate</strong> that efficiently 
+captures transient interactions between phases while maintaining interpretability through modal energy content. 
+The framework has been demonstrated on turbulent particle-laden channel flows and bubbly plume systems, 
+significantly reducing computational cost while retaining high-fidelity accuracy.
+</p>
+
+<p style="text-align:center; margin-top:1rem;">
+<strong>Reference:</strong>  
+Hajisharifi A., <strong>Halder R.</strong>, Girfoglio M., Beccari A., Bonanni D., Rozza G.  
+<em>“A LSTM-enhanced surrogate model to simulate the dynamics of particle-laden fluid systems.”</em>  
+<i>Computers & Fluids</i>, 280:106361 (2024).  
+<a href="https://doi.org/10.1016/j.compfluid.2024.106361" target="_blank">DOI link</a>
+</p>
+<!-- End Particle-Laden Section -->
+
+
             <h3><strong>Linear and Non-Linear Non-Intrusive ROM for Aeroelastic and Wave–Structure Interaction Problems</strong></h3>
             <p>
               During my Ph.D. at the National University of Singapore under Prof. Khoo Boo Cheong, I developed
