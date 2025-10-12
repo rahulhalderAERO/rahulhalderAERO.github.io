@@ -1,14 +1,73 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Redirecting...</title>
-		<meta http-equiv="refresh" content="0;url=/fun-projects/spidey/">
-	</head>
-	<body>
-		<script type="text/javascript">
-			window.location = "/fun-projects/spidey/";
-		</script>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8" />
+  <title>What’s Next | Rahul Halder</title>
+  <link rel="stylesheet" href="/wp-content/themes/twentyten/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    .entry-content { max-width: 940px; margin: 0 auto; padding: 1rem; }
+    .block { margin: 1.25rem 0; }
+    img.responsive { width: 100%; height: auto; display: block; border-radius: 8px; }
+    /* Simple top menu */
+    #menu-top-menu { list-style:none; display:flex; gap:1rem; padding:0; margin:0.5rem 0 0; }
+    #menu-top-menu li a { text-decoration:none; }
+    .current-menu-item a { font-weight:700; }
+  </style>
+</head>
+<body class="page">
+<div id="wrapper" class="hfeed">
+  <div id="header">
+    <div id="masthead">
+      <div id="branding" role="banner">
+        <div id="site-title"><span><a href="/" rel="home">Rahul Halder</a></span></div>
+        <div id="site-description">Personal website</div>
+      </div>
 
-		<p>You are being redirected to <a href="/fun-projects/spidey/">/research-projects/minihalos-pmf/</a></p>
-	</body>
+      <!-- Top nav -->
+      <div id="access" role="navigation">
+        <ul id="menu-top-menu" class="menu">
+          <li class="menu-item"><a href="/">Home</a></li>
+          <li class="menu-item"><a href="/research-projects/">Research Projects</a></li>
+          <li class="menu-item current-menu-item"><a href="/whats-next/" aria-current="page">What’s Next</a></li>
+          <li class="menu-item"><a href="/wp-content/uploads/2021/10/Rahul_CV.pdf">CV</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="main">
+    <div id="container" class="one-column">
+      <div id="content" role="main">
+        <h1 class="entry-title">What’s Next</h1>
+        <div class="entry-content">
+
+          <!-- Section 1: Clean schematic (no text) -->
+          <div class="block">
+            <figure>
+              <img class="responsive" src="/wp-content/uploads/2025/10/whats_next_schematic.png"
+                   alt="Clean schematic: nonlinear manifold learning ROM (no text)">
+            </figure>
+          </div>
+
+          <!-- Section 2: Autoencoder/GNN replace POD + learned Hyper-Reduction -->
+          <div class="block">
+            <figure>
+              <img class="responsive" src="/wp-content/uploads/2025/10/whats_next_flow.png"
+                   alt="Autoencoder/GNN replaces POD; learned hyper-reduction; optimization/RL/inverse outside">
+            </figure>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer" role="contentinfo">
+    <div id="colophon">
+      <div id="site-info"><a href="/" rel="home">Rahul Halder</a></div>
+    </div>
+  </div>
+</div>
+</body>
 </html>
