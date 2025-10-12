@@ -190,6 +190,50 @@ Hajisharifi A., <strong>Halder R.</strong>, Girfoglio M., Beccari A., Bonanni D.
 <!-- End Particle-Laden Section -->
 
 
+<!-- Coupling OpenFOAM with Physics-Informed Neural Networks -->
+<h4><strong>Coupling OpenFOAM with Physics-Informed Neural Networks (PINN)</strong></h4>
+
+<p>
+A current focus of my work involves hybridizing high-fidelity CFD solvers such as 
+<strong>OpenFOAM</strong> with <strong>Physics-Informed Neural Networks (PINNs)</strong> 
+to create a framework that merges the robustness of numerical solvers with the generalization 
+capabilities of deep learning. The aim is to achieve real-time, data-efficient predictions 
+while enforcing the governing physical laws through the PINN formulation.
+</p>
+
+<div class="wp-block-columns">
+  <div class="wp-block-column">
+    <figure>
+      <img src="/wp-content/uploads/openfoam-pinn.png" 
+           alt="Hybrid OpenFOAM-PINN coupling workflow" />
+      <figcaption><em>Hybrid OpenFOAM–PINN workflow for fluid–structure interaction</em></figcaption>
+    </figure>
+  </div>
+</div>
+
+<p>
+In this approach, the OpenFOAM solver provides sparse or partially sampled flow field data, 
+which are used to train the PINN under the constraint of the Navier–Stokes residuals and 
+boundary conditions. This coupling allows the neural network to infer unobserved regions 
+and predict dynamic quantities at unseen parameter settings with minimal supervision.
+</p>
+
+<p>
+The method enables <strong>non-intrusive data assimilation</strong> and provides a flexible 
+bridge between CFD solvers and scientific machine learning. 
+The hybrid OpenFOAM–PINN framework can serve as a foundation for reduced-order 
+digital twin development and real-time flow reconstruction tasks.
+</p>
+
+<p style="text-align:center; margin-top:1rem;">
+<strong>Reference:</strong>  
+<strong>Halder R.</strong>, Stabile G., Rozza G.  
+<em>“Coupling Physics-Informed Neural Networks with External Solvers.”</em> (2025).  
+<a href="http://arxiv.org/abs/2509.24615" target="_blank">arXiv:2509.24615</a>
+</p>
+<!-- End Coupling OpenFOAM with PINN -->
+
+
             <h3><strong>Linear and Non-Linear Non-Intrusive ROM for Aeroelastic and Wave–Structure Interaction Problems</strong></h3>
             <p>
               During my Ph.D. at the National University of Singapore under Prof. Khoo Boo Cheong, I developed
