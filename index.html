@@ -228,59 +228,8 @@ var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions
 </h1>
 <div id="site-description">Personal website</div>
 <div style="width: 940px; height: auto;">
-<img src="/wp-content/uploads/2020/05/pod_deim.gif?v=1" alt="" style="max-width:100%;max-height:100%;">
+<img alt="" src="/wp-content/uploads/2020/05/Myimage.jpg" style="width: 100%; height: 220px; object-fit: cover; display: block;"/>
 <!--To upload image, first set aspect ratio to 3:1, and then simply put the name above. The code will automatically rescale the image appropriately-->
-</div>
-<!-- POD + DEIM EXPLAINER USING EXISTING GIFs -->
-<style>
-  .rom-explainer {
-    max-width: 940px; margin: 1.75rem auto; position: relative; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-  }
-  .rom-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-  .rom-card { position: relative; border: 1px solid #e8e8e8; border-radius: 12px; overflow: hidden; background: #fff; }
-  .rom-card img { display: block; width: 100%; height: auto; }
-  .rom-label { position: absolute; top: 10px; left: 12px; padding: 4px 10px; background: rgba(255,255,255,.9);
-               border-radius: 999px; font-weight: 600; font-size: 14px; box-shadow: 0 0 0 1px rgba(0,0,0,.06) inset; }
-  .pod-arrow { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
-               width: 160px; height: 6px; background: #222; border-radius: 4px; opacity: 0; animation: podFade 6s infinite; }
-  .pod-arrow::after { content: ""; position: absolute; right: -12px; top: -6px;
-                      border-left: 12px solid #222; border-top: 9px solid transparent; border-bottom: 9px solid transparent; }
-  @keyframes podFade { 0%, 10% { opacity: 0; } 15%, 45% { opacity: 0.9; } 50%, 100% { opacity: 0; } }
-  .pod-text { position: absolute; left: 50%; top: calc(50% - 28px); transform: translate(-50%, -50%);
-              font-weight: 700; font-size: 16px; background: rgba(255,255,255,.95); padding: 3px 8px; border-radius: 6px;
-              opacity: 0; animation: podText 6s infinite; }
-  @keyframes podText { 0%, 10% { opacity: 0; } 15%, 45% { opacity: 1; } 50%, 100% { opacity: 0; } }
-  .deim-dot { position: absolute; width: 12px; height: 12px; background: #e22d2d; border-radius: 50%;
-              border: 2px solid #fff; box-shadow: 0 0 0 1px rgba(0,0,0,.15); opacity: 0; animation: blink 6s infinite; }
-  @keyframes blink { 0%, 45% { opacity: 0; transform: scale(.6); } 55%, 85% { opacity: 1; transform: scale(1); } 90%, 100% { opacity: 0; transform: scale(.8); } }
-  .legend { text-align: center; color: #333; font-size: 15px; margin-top: 10px; }
-</style>
-<div class="rom-explainer">
-<div class="rom-grid">
-<figure class="rom-card" style="aspect-ratio: 16/9;">
-<img alt="Full-order CFD pressure field (FOM)" src="/wp-content/uploads/2020/05/P.gif"/>
-<div class="rom-label">Full Order Model (FOM)</div>
-</figure>
-<figure class="rom-card" id="rom-panel" style="aspect-ratio: 16/9;">
-<img alt="ROM reconstruction" src="/wp-content/uploads/2020/05/Prec.gif"/>
-<div class="rom-label">ROM Reconstruction</div>
-<div class="pod-arrow"></div>
-<div class="pod-text">POD Reduction</div>
-<!-- DEIM sample points (percent positions relative to this panel) -->
-<div class="deim-dot" style="left: 65%; top: 58%; animation-delay: .50s;"></div>
-<div class="deim-dot" style="left: 72%; top: 50%; animation-delay: .65s;"></div>
-<div class="deim-dot" style="left: 78%; top: 62%; animation-delay: .80s;"></div>
-<div class="deim-dot" style="left: 82%; top: 56%; animation-delay: .95s;"></div>
-<div class="deim-dot" style="left: 70%; top: 68%; animation-delay: 1.10s;"></div>
-<div class="deim-dot" style="left: 86%; top: 44%; animation-delay: 1.25s;"></div>
-<div class="deim-dot" style="left: 80%; top: 72%; animation-delay: 1.40s;"></div>
-<div class="deim-dot" style="left: 90%; top: 60%; animation-delay: 1.55s;"></div>
-</figure>
-</div>
-<div class="legend">
-<strong>POD &amp; DEIM explanation:</strong>
-    Left shows full-order CFD pressure. Arrow (phase 1) indicates POD projection. Red dots (phase 2) mark DEIM sample locations where the nonlinear term is evaluated in the reduced model.
-  </div>
 </div>
 </div>
 <!-- #branding -->
@@ -309,17 +258,6 @@ var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions
 <h3><strong>Academic history</strong></h3>
 <p> I was born in Kolkata and spent my childhood and teenage years in a small town named Chandpara in West Bengal. I earned my Bachelor of Engineering degree in Mechanical Engineering at Jadavpur University, Kolkata, India in 2013. Next, I went to the Indian Institute of Technology, Madras for a Master of Technology degree with a focus on the fluid and thermal branch. In 2015, I arrived in Singapore, the red dot of South Asia and there I developed my interest in reduced order modelling and scientific machine learning during my Ph.D. at the National University of Singapore, Mechanical Engineering Department with an application in the field of aeroelasticity. Next, I worked at the University of Michigan, Aerospace Engineering Department as a post-doc fellow on high aspect ratio wing aeroelasticity. I continued my continental jump and currently working at the Mathematics Department, International School for Advanced Studies (SISSA) in Trieste, Italy, a beautiful coastal town by the Adriatic sea. My research expertise includes fluid-structure interaction, aeroelasticity, computational fluid dynamics, reduced order models and scientific machine learning. I enjoy teaching and have given several talks at international and national conferences. Besides my academic activities, I love writing poetry (<a data-type="URL" href="https://fromtintinspen.blogspot.com/" rel="noreferrer noopener" target="_blank">tintin's blog</a>) and playing my violin (beginner stage !!).</p>
 <hr class="wp-block-separator has-text-color has-background has-medium-gray-background-color has-medium-gray-color is-style-default"/>
-
-<!-- POD & DEIM section (inline on home page) -->
-<section id="pod_deim" style="max-width:940px; margin: 1.5rem auto;">
-<h3 style="margin:0 0 .5rem;">POD Reduction &amp; Hyper-Reduction (DEIM)</h3>
-<figure style="margin:0; border:1px solid #eee; border-radius:12px; overflow:hidden; background:#fafafa;">
-<img alt="POD projection followed by DEIM hyper-reduction" src="/wp-content/uploads/2020/05/pod_deim.gif" style="width:100%;height:auto;display:block;"/>
-<figcaption style="padding:.6rem .8rem; color:#555;">
-      POD projects the state onto a low-dimensional linear subspace; DEIM evaluates the nonlinear term at a sparse set of points to accelerate the ROM.
-    </figcaption>
-</figure>
-</section>
 <h2> Journal Publications</h2>
 <p><a data-id="https://scholar.google.com.sg/citations?user=uIe-AjkAAAAJ&amp;hl=en" data-type="URL" href="https://scholar.google.com.sg/citations?user=uIe-AjkAAAAJ&amp;hl=en" rel="noreferrer noopener" target="_blank">googlescolar</a> <a data-id="https://www.researchgate.net/profile/Rahul-Halder" data-type="URL" href="https://www.researchgate.net/profile/Rahul-Halder" rel="noreferrer noopener" target="_blank">researchgate</a> <a data-id="https://www.linkedin.com/in/rahul-halder-8b964b105/" data-type="URL" href="https://www.linkedin.com/in/rahul-halder-8b964b105/" rel="noreferrer noopener" target="_blank">Linkedin</a></p>
 <div class="is-layout-flex wp-container-13 wp-block-columns">
@@ -395,6 +333,7 @@ Order Model for Airfoil Gust and Aileron Buzz Response."(2020)<br/><em> <b>Rahul
 <p> </p>
 </div>
 </li></ul></div>
+ 
 </div>
 <!-- #primary .widget-area -->
 </div>
@@ -415,6 +354,7 @@ Order Model for Airfoil Gust and Aileron Buzz Response."(2020)<br/><em> <b>Rahul
 <!-- #colophon -->
 </div>
 <!-- #footer -->
+
 <!-- #wrapper -->
 <script>// Used by Gallery Custom Links to handle tenacious Lightboxes
 				jQuery(document).ready(function () {
@@ -467,3 +407,4 @@ Order Model for Airfoil Gust and Aileron Buzz Response."(2020)<br/><em> <b>Rahul
 <script id="comment-reply-js" src="/wp-includes/js/comment-reply.min.js?ver=6.1.1" type="text/javascript"></script>
 </body>
 </html>
+
