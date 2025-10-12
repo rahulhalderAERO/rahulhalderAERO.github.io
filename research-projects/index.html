@@ -235,83 +235,88 @@ digital twin development and real-time flow reconstruction tasks.
 
 
             <h3><strong>Linear and Non-Linear Non-Intrusive ROM for Aeroelastic and Wave–Structure Interaction Problems</strong></h3>
-            <p>
-              During my Ph.D. at the National University of Singapore under Prof. Khoo Boo Cheong, I developed
-              several linear and nonlinear non-intrusive reduced-order models for aeroelastic systems and gust
-              load analysis. The open-source CFD platform SU2 was extended to perform coupled fluid–structure
-              simulations and modal ROM computations.
-            </p>
 
-            <div class="wp-block-columns">
-              <div class="wp-block-column">
-                <p>
-                  <strong><a href="https://arc.aiaa.org/doi/abs/10.2514/1.J058529" target="_blank">Signal Interpolation Augmented Linear Non-Intrusive ROM</a></strong> —
-                  A linear ROM based on subspace identification combined with the Discrete Empirical Interpolation Method (DEIM)
-                  for reconstructing distributed variables. Applied to airfoil flutter under gust excitation; the inviscid
-                  flutter boundary for NACA64A010 is shown below.
-                </p>
-              </div>
-              <div class="wp-block-column">
-                <figure>
-                  <img src="/wp-content/uploads/2020/05/Flutter_Boundary_Interpolated_Signal.png" alt="Flutter boundary result">
-                </figure>
-              </div>
-            </div>
+<p style="text-align: justify; text-justify: inter-word;">
+During my Ph.D. at the National University of Singapore under Prof. Khoo Boo Cheong, I developed several
+linear and nonlinear non-intrusive reduced-order models for aeroelastic systems and gust load analysis.
+The open-source CFD platform SU2 was extended to perform coupled fluid–structure simulations and modal ROM computations.
+</p>
 
-            <div class="wp-block-columns">
-              <div class="wp-block-column">
-                <figure>
-                  <img src="/wp-content/uploads/2020/05/LSTM_Aero.png" alt="LSTM ROM Aeroelasticity">
-                </figure>
-              </div>
-              <div class="wp-block-column">
-                <p>
-                  <strong><a href="https://arc.aiaa.org/doi/abs/10.2514/1.J059027" target="_blank">Nonlinear Non-Intrusive ROM</a></strong> —
-                  A deep learning–enhanced ROM coupling Long Short-Term Memory (LSTM) networks with DEIM for modeling viscous
-                  transonic aeroelastic phenomena.
-                </p>
-              </div>
-            </div>
+<div class="wp-block-columns">
+  <div class="wp-block-column">
+    <p style="text-align: justify; text-justify: inter-word;">
+      <strong><a href="https://arc.aiaa.org/doi/abs/10.2514/1.J058529" target="_blank">
+      Signal Interpolation Augmented Linear Non-Intrusive ROM</a></strong> —
+      A linear ROM based on subspace identification combined with the Discrete Empirical Interpolation Method (DEIM)
+      for reconstructing distributed variables. Applied to airfoil flutter under gust excitation; the inviscid
+      flutter boundary for NACA64A010 is shown below.
+    </p>
+  </div>
+  <div class="wp-block-column">
+    <figure>
+      <img src="/wp-content/uploads/2020/05/Flutter_Boundary_Interpolated_Signal.png" alt="Flutter boundary result" style="width:100%; height:auto; border-radius:8px;">
+    </figure>
+  </div>
+</div>
 
-            <div class="wp-block-columns">
-              <div class="wp-block-column">
-                <p>
-                  <strong><a href="https://arc.aiaa.org/doi/abs/10.2514/1.J060344" target="_blank">Periodic Gust Effect on Aeroelastic Motion</a></strong> —
-                  Assessment of aeroelastic responses due to periodic vertical gusts impacting a pitching–plunging airfoil
-                  with trailing-edge control surfaces in transonic regimes.
-                </p>
-              </div>
-              <div class="wp-block-column">
-                <figure>
-                  <img src="/wp-content/uploads/2020/05/Aero_Gust.png" alt="Aeroelastic gust case">
-                </figure>
-              </div>
-            </div>
+<div class="wp-block-columns">
+  <div class="wp-block-column">
+    <figure>
+      <img src="/wp-content/uploads/2020/05/LSTM_Aero.png" alt="LSTM ROM Aeroelasticity" style="width:100%; height:auto; border-radius:8px;">
+    </figure>
+  </div>
+  <div class="wp-block-column">
+    <p style="text-align: justify; text-justify: inter-word;">
+      <strong><a href="https://arc.aiaa.org/doi/abs/10.2514/1.J059027" target="_blank">
+      Nonlinear Non-Intrusive ROM</a></strong> —
+      A deep learning–enhanced ROM coupling Long Short-Term Memory (LSTM) networks with DEIM for modeling viscous
+      transonic aeroelastic phenomena.
+    </p>
+  </div>
+</div>
 
-            <p>
-              <strong><a href="https://su2foundation.org/wp-content/uploads/2021/10/halder_su2_conference_2020.pdf" target="_blank">Three-Dimensional Aeroelasticity and ROM in SU2</a></strong> —  
-              Implementation of modal analysis for linear aeroelastic ROM computation in SU2. The code enables
-              modal deflections and random excitations for 3D wings, extending SU2 beyond rigid body motion.
-            </p>
+<div class="wp-block-columns">
+  <div class="wp-block-column">
+    <p style="text-align: justify; text-justify: inter-word;">
+      <strong><a href="https://arc.aiaa.org/doi/abs/10.2514/1.J060344" target="_blank">
+      Periodic Gust Effect on Aeroelastic Motion</a></strong> —
+      Assessment of aeroelastic responses due to periodic vertical gusts impacting a pitching–plunging airfoil
+      with trailing-edge control surfaces in transonic regimes.
+    </p>
+  </div>
+  <div class="wp-block-column">
+    <figure>
+      <img src="/wp-content/uploads/2020/05/Aero_Gust.png" alt="Aeroelastic gust case" style="width:100%; height:auto; border-radius:8px;">
+    </figure>
+  </div>
+</div>
 
-            <figure>
-              <img src="/wp-content/uploads/2020/05/HAR.png" alt="3D Aeroelastic ROM visualization">
-            </figure>
+<p style="text-align: justify; text-justify: inter-word;">
+<strong><a href="https://su2foundation.org/wp-content/uploads/2021/10/halder_su2_conference_2020.pdf" target="_blank">
+Three-Dimensional Aeroelasticity and ROM in SU2</a></strong> —
+Implementation of modal analysis for linear aeroelastic ROM computation in SU2. The code enables
+modal deflections and random excitations for 3D wings, extending SU2 beyond rigid body motion.
+</p>
 
-            <div class="wp-block-columns">
-              <div class="wp-block-column">
-                <video controls width="240">
-                  <source src="/wp-content/uploads/2020/05/WSI_II.mp4" type="video/mp4">
-                </video>
-              </div>
-              <div class="wp-block-column">
-                <p>
-                  <strong><a href="https://doi.org/10.1016/j.oceaneng.2023.114511" target="_blank">Wave–Structure Interaction</a></strong> —
-                  Evaluation of LSTM-driven Non-Intrusive ROMs (NIROM) for floating-body dynamics under surface waves.
-                  Hydrodynamic forces and displacements are derived via SPH simulations to benchmark ROM performance.
-                </p>
-              </div>
-            </div>
+<figure>
+  <img src="/wp-content/uploads/2020/05/HAR.png" alt="3D Aeroelastic ROM visualization" style="width:100%; height:auto; border-radius:8px;">
+</figure>
+
+<div class="wp-block-columns">
+  <div class="wp-block-column">
+    <video controls width="100%" style="border-radius:8px;">
+      <source src="/wp-content/uploads/2020/05/WSI_II.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="wp-block-column">
+    <p style="text-align: justify; text-justify: inter-word;">
+      <strong><a href="https://doi.org/10.1016/j.oceaneng.2023.114511" target="_blank">
+      Wave–Structure Interaction</a></strong> —
+      Evaluation of LSTM-driven Non-Intrusive ROMs (NIROM) for floating-body dynamics under surface waves.
+      Hydrodynamic forces and displacements are derived via SPH simulations to benchmark ROM performance.
+    </p>
+  </div>
+</div>
 
             <h3><strong>Miscellaneous</strong></h3>
             <p>
