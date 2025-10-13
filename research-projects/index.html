@@ -2,65 +2,56 @@
 <html lang="en-US">
 <head>
 <meta charset="UTF-8">
-<title>Research projects | Rahul Halder</title>
+<title>Research Projects | Rahul Halder</title>
 
-<!-- keep WordPress theme CSS -->
+<!-- Keep WordPress theme CSS -->
 <link rel="stylesheet" href="/wp-content/themes/twentyten/style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
-  /* === Custom style cleanup === */
-  .entry-content p {
-    text-align: justify;
-    text-justify: inter-word;
-    hyphens: auto;
-    font-size: 16px;
-    line-height: 1.6;
-    color: #222;
+  :root{
+    --ink:#111;
+    --muted:#555;
+    --bg:#fafafa;
+    --brand:#0073aa; /* WP blue */
+    --card:#fff;
+    --border:#e7e7e7;
+    --radius:10px;
   }
-  .entry-content h3 {
-    font-size: 22px;
-    margin-top: 1.5rem;
-    border-left: 4px solid #0073aa;
-    padding-left: 8px;
+
+  /* Page wrap */
+  .entry-wrap{max-width:940px;margin:0 auto;padding:1rem;}
+  .entry-title{margin:.25rem 0 1rem;}
+
+  /* Content typography */
+  .entry-content{background:var(--bg);border-radius:var(--radius);padding:1rem;}
+  .entry-content p{color:#222;text-align:justify;text-justify:inter-word;hyphens:auto;font-size:16px;line-height:1.65;margin:.6rem 0;}
+  .entry-content a{color:#004d80;text-decoration:none;}
+  .entry-content a:hover{text-decoration:underline;}
+
+  /* Section headers */
+  .section-title{
+    font-size:22px;margin:1.5rem 0 .75rem;border-left:4px solid var(--brand);padding-left:8px;line-height:1.25;
   }
-  .entry-content strong a {
-    color: #004d80;
-    text-decoration: none;
+
+  /* Media */
+  figure{margin:.5rem 0;}
+  figure img, video{
+    display:block;margin:0 auto;border-radius:8px;max-width:100%;height:auto;
   }
-  .entry-content strong a:hover {
-    text-decoration: underline;
-  }
-  figure img {
-    border-radius: 8px;
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-    height: auto;
-  }
-  video {
-    border-radius: 8px;
-    display: block;
-    margin: 0 auto;
-  }
-  .wp-block-columns {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    align-items: flex-start;
-    margin: 1rem 0;
-  }
-  .wp-block-column {
-    flex: 1;
-    min-width: 300px;
-  }
-  .entry-content {
-    max-width: 940px;
-    margin: 0 auto;
-    padding: 1rem;
-    background: #fafafa;
-    border-radius: 10px;
-  }
+  figcaption{font-size:.9rem;color:var(--muted);text-align:center;margin-top:.3rem;}
+
+  /* Two-column rows (responsive) */
+  .wp-block-columns{display:flex;flex-wrap:wrap;gap:1rem;align-items:stretch;margin:1rem 0;}
+  .wp-block-column{flex:1 1 320px;min-width:280px;}
+
+  /* Cards for visual grouping (optional) */
+  .card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:1rem;box-shadow:0 1px 0 rgba(0,0,0,.04);}
+
+  /* Menu consistency */
+  #menu-top-menu{list-style:none;display:flex;gap:1rem;flex-wrap:wrap;margin:.5rem 0 0;padding:0;}
+  #menu-top-menu li a{text-decoration:none;}
+  .current_page_item > a,.current-menu-item > a{font-weight:700;}
 </style>
 </head>
 
@@ -78,9 +69,9 @@
       <div id="access" role="navigation">
         <ul id="menu-top-menu" class="menu">
           <li><a href="/">Home</a></li>
-          <li class="current_page_item"><a href="/research-projects/" aria-current="page">Research projects</a></li>
-          <li class="menu-item"><a href="/spidey/">What’s Next</a></li>
-          <li><a href="/wp-content/uploads/2021/10/RahulCV.pdf">CV</a></li>
+          <li class="current_page_item"><a href="/research-projects/" aria-current="page">Research Projects</a></li>
+          <li class="menu-item"><a href="/whats-next/">What’s Next</a></li>
+          <li><a href="/wp-content/uploads/2021/10/Rahul_CV.pdf">CV</a></li>
         </ul>
       </div>
     </div>
@@ -90,253 +81,229 @@
     <div id="container" class="one-column">
       <div id="content" role="main">
         <div id="post-72" class="post-72 page type-page status-publish hentry">
-          <h1 class="entry-title">Research Projects</h1>
+          <div class="entry-wrap">
+            <h1 class="entry-title">Research Projects</h1>
 
-          <div class="entry-content">
+            <div class="entry-content">
 
-            <h3><strong>Reduced Order Modelling and Scientific Machine Learning (SciML)</strong></h3>
-            <p>
-              Model order reduction provides a low-dimensional representation of high-fidelity simulations
-              while preserving essential flow and structural dynamics. Depending on the chosen approximation
-              and projection strategy, several ROM frameworks exist — including intrusive, non-intrusive,
-              and hybrid data-driven approaches. Recent developments in physics-informed neural networks (PINNs)
-              enable coupling governing equations with sparse datasets in a non-intrusive setting.
-            </p>
+              <!-- ROM + SciML -->
+              <h3 class="section-title"><strong>Reduced Order Modelling and Scientific Machine Learning (SciML)</strong></h3>
+              <div class="card">
+                <p>
+                  Model order reduction provides a low-dimensional representation of high-fidelity simulations while preserving
+                  essential flow and structural dynamics. Depending on the chosen approximation and projection strategy,
+                  several ROM frameworks exist—including intrusive, non-intrusive, and hybrid data-driven approaches.
+                  Recent developments in physics-informed neural networks (PINNs) enable coupling governing equations
+                  with sparse datasets in a non-intrusive setting.
+                </p>
 
-            <figure>
-              <img src="/wp-content/uploads/2020/05/method.png" alt="ROM schematic">
-            </figure>
-
-            <p>
-              My ongoing work involves three aspects:  
-              (1) Physics-Informed Neural Networks (PINNs) that embed discretized reduced-order equations as loss terms (ANN-DisPINN, LSTM-DisPINN).  
-              (2) Adaptive nonlinear filter–regularized projection-based ROMs for quasi-geostrophic equations relevant to oceanographic flow.  
-              (3) Data-driven ROMs (ANN-GPOD) capable of integrating both numerical and experimental datasets for industrial flow configurations.
-            </p>
-
-            <!-- Cerebrovascular and Physics-Informed section -->
-            <h4><strong>Cerebrovascular Flow Modelling and POD-Galerkin Projection Based and Other Physics Based Model</strong></h4>
-            <p>
-              Extending ROM and SciML to physiological systems, my recent work focuses on modeling 
-              unsteady cerebrovascular hemodynamics using reduced-order frameworks enhanced by 
-              neural architectures. <strong>POD–Galerkin projection-based </strong> and 
-              <strong>Physics-Informed Reservoir Computing (PIRC)</strong> allow accurate temporal reconstruction 
-              of pressure and velocity fields even under sparse data constraints.
-            </p>
-
-            <div class="wp-block-columns">
-              <div class="wp-block-column">
                 <figure>
-                  <img src="/wp-content/uploads/2020/05/P.gif" alt="Benchmark">
-                  <figcaption><em>Benchmark CFD Simulation</em></figcaption>
+                  <img src="/wp-content/uploads/2020/05/method.png" alt="Schematic of ROM families and SciML coupling" loading="lazy" decoding="async">
+                  <figcaption>ROM families and opportunities for SciML coupling.</figcaption>
+                </figure>
+
+                <p>
+                  My ongoing work involves three aspects:
+                  (1) PINNs that embed discretized reduced-order equations as loss terms (ANN-DisPINN, LSTM-DisPINN);
+                  (2) Adaptive nonlinear filter–regularized projection ROMs for quasi-geostrophic equations (oceanographic flows);
+                  (3) Data-driven ROMs (ANN-GPOD) integrating numerical and experimental datasets for industrial configurations.
+                </p>
+              </div>
+
+              <!-- Cerebrovascular -->
+              <h3 class="section-title"><strong>Cerebrovascular Flow: POD–Galerkin & Physics-Informed Temporal Models</strong></h3>
+              <div class="card">
+                <p>
+                  Extending ROM and SciML to physiological systems, we model unsteady cerebrovascular hemodynamics using
+                  reduced-order frameworks enhanced by neural architectures. <strong>POD–Galerkin projection</strong> and
+                  <strong>Physics-Informed Reservoir Computing (PIRC)</strong> enable accurate temporal reconstruction of
+                  pressure and velocity fields under sparse data constraints.
+                </p>
+
+                <div class="wp-block-columns">
+                  <div class="wp-block-column">
+                    <figure>
+                      <img src="/wp-content/uploads/2020/05/P.gif" alt="Baseline benchmark CFD simulation of cerebrovascular flow" loading="lazy" decoding="async">
+                      <figcaption><em>Benchmark CFD simulation</em></figcaption>
+                    </figure>
+                  </div>
+                  <div class="wp-block-column">
+                    <figure>
+                      <img src="/wp-content/uploads/2020/05/Prec.gif" alt="POD–Galerkin / physics-informed temporal model reconstruction" loading="lazy" decoding="async">
+                      <figcaption><em>POD–Galerkin / physics-informed temporal reconstruction</em></figcaption>
+                    </figure>
+                  </div>
+                </div>
+
+                <p>
+                  These hybrid physics–AI methods enable real-time predictions of arterial flows without solving full-scale
+                  Navier–Stokes equations and form the core of next-generation ROMs for biomedical applications.
+                </p>
+              </div>
+
+              <!-- Particle-laden -->
+              <h3 class="section-title"><strong>Particle-Laden Flow Systems and POD–LSTM Reduced Order Modelling</strong></h3>
+              <div class="card">
+                <p>
+                  Multiphase, particle-laden flows arise in fluidized beds, sprays, and pollutant transport. Strong
+                  coupling between dispersed and carrier phases introduces nonlinearity and multiscale dynamics, making
+                  full-order simulations expensive. We combine <strong>Proper Orthogonal Decomposition (POD)</strong> for
+                  spatial compression with <strong>Long Short-Term Memory (LSTM)</strong> networks for nonlinear temporal prediction.
+                </p>
+
+                <figure>
+                  <img src="/wp-content/uploads/2020/05/animation_lagrangian.gif" alt="Particle concentration and trajectory evolution (CFD-DEM)" loading="lazy" decoding="async">
+                  <figcaption><em>Particle concentration and trajectory evolution (CFD–DEM)</em></figcaption>
+                </figure>
+
+                <p>
+                  POD extracts dominant coherent structures to yield a compact latent state for both fluid and particle
+                  quantities. An LSTM then learns long-horizon temporal dynamics in this reduced space, forecasting fields
+                  (velocity, vorticity, particle distribution) without re-solving the PDEs—yielding a
+                  <strong>non-intrusive, physics-aware surrogate</strong> with strong interpretability via modal energy content.
+                </p>
+
+                <p style="text-align:center;margin-top:.8rem;">
+                  <strong>Reference:</strong> Hajisharifi A., <strong>Halder R.</strong>, Girfoglio M., Beccari A., Bonanni D., Rozza G.
+                  <em>A LSTM-enhanced surrogate model to simulate the dynamics of particle-laden fluid systems.</em>
+                  <i>Computers &amp; Fluids</i>, 280:106361 (2024).
+                  <a href="https://doi.org/10.1016/j.compfluid.2024.106361" target="_blank" rel="noreferrer noopener">DOI</a>
+                </p>
+              </div>
+
+              <!-- OpenFOAM + PINN -->
+              <h3 class="section-title"><strong>Coupling OpenFOAM with Physics-Informed Neural Networks (PINNs)</strong></h3>
+              <div class="card">
+                <p>
+                  We hybridize high-fidelity CFD solvers such as <strong>OpenFOAM</strong> with <strong>PINNs</strong>
+                  to merge the robustness of numerical solvers and the generalization of deep learning. Sparse flow-field
+                  data from OpenFOAM train a PINN under Navier–Stokes residual and boundary constraints, enabling inference
+                  in unobserved regions and fast parameter sweeps.
+                </p>
+
+                <figure>
+                  <img src="/wp-content/uploads/openfoam-pinn.png" alt="Hybrid OpenFOAM–PINN coupling workflow" loading="lazy" decoding="async">
+                  <figcaption><em>Hybrid OpenFOAM–PINN workflow for fluid–structure interaction</em></figcaption>
+                </figure>
+
+                <p>
+                  This <strong>non-intrusive data assimilation</strong> approach provides a flexible bridge between CFD and SciML,
+                  supporting reduced-order digital twins and real-time flow reconstruction.
+                </p>
+
+                <p style="text-align:center;margin-top:.8rem;">
+                  <strong>Reference:</strong> <strong>Halder R.</strong>, Stabile G., Rozza G.
+                  <em>Coupling Physics-Informed Neural Networks with External Solvers.</em> (2025).
+                  <a href="http://arxiv.org/abs/2509.24615" target="_blank" rel="noreferrer noopener">arXiv:2509.24615</a>
+                </p>
+              </div>
+
+              <!-- Aeroelastic & WSI -->
+              <h3 class="section-title"><strong>Linear and Non-Linear Non-Intrusive ROM for Aeroelastic &amp; Wave–Structure Interaction</strong></h3>
+              <div class="card">
+                <p>
+                  During my Ph.D. at the National University of Singapore (with Prof. Khoo Boo Cheong), I developed linear and nonlinear
+                  non-intrusive ROMs for aeroelastic systems and gust load analysis. The open-source CFD platform SU2 was extended
+                  for coupled fluid–structure simulations and modal ROM computations.
+                </p>
+
+                <div class="wp-block-columns">
+                  <div class="wp-block-column">
+                    <p>
+                      <strong><a href="https://arc.aiaa.org/doi/abs/10.2514/1.J058529" target="_blank" rel="noreferrer noopener">
+                        Linear Non-Intrusive ROM</a></strong> —
+                      Subspace identification coupled with DEIM for reconstructing distributed variables. Applied to airfoil flutter
+                      under gust excitation; inviscid flutter boundary for NACA64A010 shown alongside.
+                    </p>
+                  </div>
+                  <div class="wp-block-column">
+                    <figure>
+                      <img src="/wp-content/uploads/2020/05/Flutter_Boundary_Interpolated_Signal.png" alt="Flutter boundary (interpolated signal) for NACA64A010" loading="lazy" decoding="async">
+                    </figure>
+                  </div>
+                </div>
+
+                <div class="wp-block-columns">
+                  <div class="wp-block-column">
+                    <figure>
+                      <img src="/wp-content/uploads/2020/05/LSTM_Aero.png" alt="LSTM-based nonlinear ROM for viscous transonic aeroelasticity" loading="lazy" decoding="async">
+                    </figure>
+                  </div>
+                  <div class="wp-block-column">
+                    <p>
+                      <strong><a href="https://arc.aiaa.org/doi/abs/10.2514/1.J059027" target="_blank" rel="noreferrer noopener">
+                        Nonlinear Non-Intrusive ROM</a></strong> —
+                      LSTM-enhanced ROM (coupled with DEIM) for viscous transonic aeroelastic phenomena.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="wp-block-columns">
+                  <div class="wp-block-column">
+                    <p>
+                      <strong><a href="https://arc.aiaa.org/doi/abs/10.2514/1.J060344" target="_blank" rel="noreferrer noopener">
+                        Periodic Gust Effect on Aeroelastic Motion</a></strong> —
+                      Assessing responses to periodic vertical gusts impacting a pitching–plunging airfoil with trailing-edge
+                      control surfaces in transonic regimes.
+                    </p>
+                  </div>
+                  <div class="wp-block-column">
+                    <figure>
+                      <img src="/wp-content/uploads/2020/05/Aero_Gust.png" alt="Aeroelastic response under periodic gust" loading="lazy" decoding="async">
+                    </figure>
+                  </div>
+                </div>
+
+                <p>
+                  <strong><a href="https://su2foundation.org/wp-content/uploads/2021/10/halder_su2_conference_2020.pdf" target="_blank" rel="noreferrer noopener">
+                    Three-Dimensional Aeroelasticity and ROM in SU2</a></strong> —
+                  Implemented modal analysis for linear aeroelastic ROM computation in SU2, enabling modal deflections and
+                  random excitations for 3D wings (beyond rigid-body motion).
+                </p>
+
+                <figure>
+                  <img src="/wp-content/uploads/2020/05/HAR.png" alt="3D aeroelastic ROM visualization in SU2" loading="lazy" decoding="async">
+                </figure>
+
+                <div class="wp-block-columns">
+                  <div class="wp-block-column">
+                    <video controls width="100%" preload="metadata">
+                      <source src="/wp-content/uploads/2020/05/WSI_II.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="wp-block-column">
+                    <p>
+                      <strong><a href="https://doi.org/10.1016/j.oceaneng.2023.114511" target="_blank" rel="noreferrer noopener">
+                        Wave–Structure Interaction</a></strong> —
+                      LSTM-driven NIROMs for floating-body dynamics under surface waves. SPH simulations provide hydrodynamic forces
+                      and displacements to benchmark ROM performance.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Misc -->
+              <h3 class="section-title"><strong>Miscellaneous</strong></h3>
+              <div class="card">
+                <p>
+                  Additional research includes fluid–structure interactions in microfluidic systems for bioengineering
+                  applications, notably droplet generation in flexible microchannels mimicking cellular motion through capillary networks.
+                </p>
+
+                <p>
+                  <strong><a href="https://link.springer.com/article/10.1007/s10404-016-1768-4" target="_blank" rel="noreferrer noopener">
+                    Droplet Dynamics in Flexible Microchannels</a></strong> —
+                  Experimental and analytical studies on pressure-actuated membrane walls for tunable droplet generation
+                  and monodisperse control at high capillary numbers.
+                </p>
+
+                <figure>
+                  <img src="/wp-content/uploads/2020/05/Droplet_Dynamics.png" alt="Droplet dynamics in a flexible microchannel" loading="lazy" decoding="async">
                 </figure>
               </div>
-              <div class="wp-block-column">
-                <figure>
-                  <img src="/wp-content/uploads/2020/05/Prec.gif" alt="Physics-Informed Reservoir Computing cerebrovascular flow">
-                  <figcaption><em>POD-Galerkin Projection based ROM</em></figcaption>
-                </figure>
-              </div>
-            </div>
 
-            <p>
-              These frameworks merge physical priors with temporal learning for transient fluid systems, 
-              enabling real-time prediction of brain arterial flows and other biofluid problems without 
-              solving full-scale Navier–Stokes equations. Such hybrid physics–AI methods form the core 
-              of next-generation Intrusive ROM for biomedical applications.
-            </p>
-            <!-- End cerebrovascular section -->
-
-            <!-- Particle-Laden Flow System Section -->
-<h4><strong>Particle-Laden Flow Systems and POD–LSTM Based Reduced Order Modelling</strong></h4>
-
-<p>
-Multiphase and particle-laden flow systems are essential to numerous industrial and natural processes, 
-ranging from fluidized beds and sprays to pollutant transport. The strong coupling between dispersed 
-and carrier phases introduces nonlinearity and multi-scale dynamics, making full-order simulations 
-computationally demanding. To alleviate this, I developed a data-driven reduced order framework 
-combining <strong>Proper Orthogonal Decomposition (POD)</strong> for spatial compression with 
-<strong>Long Short-Term Memory (LSTM)</strong> networks for nonlinear temporal prediction.
-</p>
-  <div class="wp-block-column">
-    <figure>
-      <img src="/wp-content/uploads/2020/05/animation_lagrangian.gif" alt="Particle trajectory and concentration dynamics">
-      <figcaption><em>Particle concentration and trajectory evolution using CFD-DEM</em></figcaption>
-    </figure>
-  </div>
-</div>
-
-<p>
-The approach first extracts dominant coherent structures from fully resolved simulations via POD, 
-yielding a low-dimensional latent representation of both fluid and particle quantities. 
-Subsequently, a sequence-learning LSTM model maps temporal correlations in this reduced space, 
-allowing long-horizon forecasting of velocity, vorticity, and particle distribution fields 
-without re-solving the governing equations. 
-</p>
-
-<p>
-This method provides a <strong>non-intrusive, physics-aware surrogate</strong> that efficiently 
-captures transient interactions between phases while maintaining interpretability through modal energy content. 
-The framework has been demonstrated on turbulent particle-laden channel flows and bubbly plume systems, 
-significantly reducing computational cost while retaining high-fidelity accuracy.
-</p>
-
-<p style="text-align:center; margin-top:1rem;">
-<strong>Reference:</strong>  
-Hajisharifi A., <strong>Halder R.</strong>, Girfoglio M., Beccari A., Bonanni D., Rozza G.  
-<em>“A LSTM-enhanced surrogate model to simulate the dynamics of particle-laden fluid systems.”</em>  
-<i>Computers & Fluids</i>, 280:106361 (2024).  
-<a href="https://doi.org/10.1016/j.compfluid.2024.106361" target="_blank">DOI link</a>
-</p>
-<!-- End Particle-Laden Section -->
-
-
-<!-- Coupling OpenFOAM with Physics-Informed Neural Networks -->
-<h4><strong>Coupling OpenFOAM with Physics-Informed Neural Networks (PINN)</strong></h4>
-
-<p>
-A current focus of my work involves hybridizing high-fidelity CFD solvers such as 
-<strong>OpenFOAM</strong> with <strong>Physics-Informed Neural Networks (PINNs)</strong> 
-to create a framework that merges the robustness of numerical solvers with the generalization 
-capabilities of deep learning. The aim is to achieve real-time, data-efficient predictions 
-while enforcing the governing physical laws through the PINN formulation.
-</p>
-
-<div class="wp-block-columns">
-  <div class="wp-block-column">
-    <figure>
-      <img src="/wp-content/uploads/openfoam-pinn.png" 
-           alt="Hybrid OpenFOAM-PINN coupling workflow" />
-      <figcaption><em>Hybrid OpenFOAM–PINN workflow for fluid–structure interaction</em></figcaption>
-    </figure>
-  </div>
-</div>
-
-<p>
-In this approach, the OpenFOAM solver provides sparse or partially sampled flow field data, 
-which are used to train the PINN under the constraint of the Navier–Stokes residuals and 
-boundary conditions. This coupling allows the neural network to infer unobserved regions 
-and predict dynamic quantities at unseen parameter settings with minimal supervision.
-</p>
-
-<p>
-The method enables <strong>non-intrusive data assimilation</strong> and provides a flexible 
-bridge between CFD solvers and scientific machine learning. 
-The hybrid OpenFOAM–PINN framework can serve as a foundation for reduced-order 
-digital twin development and real-time flow reconstruction tasks.
-</p>
-
-<p style="text-align:center; margin-top:1rem;">
-<strong>Reference:</strong>  
-<strong>Halder R.</strong>, Stabile G., Rozza G.  
-<em>“Coupling Physics-Informed Neural Networks with External Solvers.”</em> (2025).  
-<a href="http://arxiv.org/abs/2509.24615" target="_blank">arXiv:2509.24615</a>
-</p>
-<!-- End Coupling OpenFOAM with PINN -->
-
-
-            <h3><strong>Linear and Non-Linear Non-Intrusive ROM for Aeroelastic and Wave–Structure Interaction Problems</strong></h3>
-
-<p style="text-align: justify; text-justify: inter-word;">
-During my Ph.D. at the National University of Singapore under Prof. Khoo Boo Cheong, I developed several
-linear and nonlinear non-intrusive reduced-order models for aeroelastic systems and gust load analysis.
-The open-source CFD platform SU2 was extended to perform coupled fluid–structure simulations and modal ROM computations.
-</p>
-
-<div class="wp-block-columns">
-  <div class="wp-block-column">
-    <p style="text-align: justify; text-justify: inter-word;">
-      <strong><a href="https://arc.aiaa.org/doi/abs/10.2514/1.J058529" target="_blank">
-      Linear Non-Intrusive ROM</a></strong> —
-      A linear ROM based on subspace identification combined with the Discrete Empirical Interpolation Method (DEIM)
-      for reconstructing distributed variables. Applied to airfoil flutter under gust excitation; the inviscid
-      flutter boundary for NACA64A010 is shown below.
-    </p>
-  </div>
-  <div class="wp-block-column">
-    <figure>
-      <img src="/wp-content/uploads/2020/05/Flutter_Boundary_Interpolated_Signal.png" alt="Flutter boundary result" style="width:100%; height:auto; border-radius:8px;">
-    </figure>
-  </div>
-</div>
-
-<div class="wp-block-columns">
-  <div class="wp-block-column">
-    <figure>
-      <img src="/wp-content/uploads/2020/05/LSTM_Aero.png" alt="LSTM ROM Aeroelasticity" style="width:100%; height:auto; border-radius:8px;">
-    </figure>
-  </div>
-  <div class="wp-block-column">
-    <p style="text-align: justify; text-justify: inter-word;">
-      <strong><a href="https://arc.aiaa.org/doi/abs/10.2514/1.J059027" target="_blank">
-      Nonlinear Non-Intrusive ROM</a></strong> —
-      A deep learning–enhanced ROM coupling Long Short-Term Memory (LSTM) networks with DEIM for modeling viscous
-      transonic aeroelastic phenomena.
-    </p>
-  </div>
-</div>
-
-<div class="wp-block-columns">
-  <div class="wp-block-column">
-    <p style="text-align: justify; text-justify: inter-word;">
-      <strong><a href="https://arc.aiaa.org/doi/abs/10.2514/1.J060344" target="_blank">
-      Periodic Gust Effect on Aeroelastic Motion</a></strong> —
-      Assessment of aeroelastic responses due to periodic vertical gusts impacting a pitching–plunging airfoil
-      with trailing-edge control surfaces in transonic regimes.
-    </p>
-  </div>
-  <div class="wp-block-column">
-    <figure>
-      <img src="/wp-content/uploads/2020/05/Aero_Gust.png" alt="Aeroelastic gust case" style="width:100%; height:auto; border-radius:8px;">
-    </figure>
-  </div>
-</div>
-
-<p style="text-align: justify; text-justify: inter-word;">
-<strong><a href="https://su2foundation.org/wp-content/uploads/2021/10/halder_su2_conference_2020.pdf" target="_blank">
-Three-Dimensional Aeroelasticity and ROM in SU2</a></strong> —
-Implementation of modal analysis for linear aeroelastic ROM computation in SU2. The code enables
-modal deflections and random excitations for 3D wings, extending SU2 beyond rigid body motion.
-</p>
-
-<figure>
-  <img src="/wp-content/uploads/2020/05/HAR.png" alt="3D Aeroelastic ROM visualization" style="width:100%; height:auto; border-radius:8px;">
-</figure>
-
-<div class="wp-block-columns">
-  <div class="wp-block-column">
-    <video controls width="100%" style="border-radius:8px;">
-      <source src="/wp-content/uploads/2020/05/WSI_II.mp4" type="video/mp4">
-    </video>
-  </div>
-  <div class="wp-block-column">
-    <p style="text-align: justify; text-justify: inter-word;">
-      <strong><a href="https://doi.org/10.1016/j.oceaneng.2023.114511" target="_blank">
-      Wave–Structure Interaction</a></strong> —
-      Evaluation of LSTM-driven Non-Intrusive ROMs (NIROM) for floating-body dynamics under surface waves.
-      Hydrodynamic forces and displacements are derived via SPH simulations to benchmark ROM performance.
-    </p>
-  </div>
-</div>
-
-            <h3><strong>Miscellaneous</strong></h3>
-            <p>
-              Additional research includes fluid–structure interactions in microfluidic systems for bioengineering
-              applications. In particular, droplet generation in flexible microchannels mimicking cellular motion
-              through capillary networks.
-            </p>
-
-            <p>
-              <strong><a href="https://link.springer.com/article/10.1007/s10404-016-1768-4" target="_blank">Droplet Dynamics in Flexible Microchannels</a></strong> —
-              Experimental and analytical studies on pressure-actuated membrane walls for tunable droplet generation
-              and monodisperse control at high capillary numbers.
-            </p>
-
-            <figure>
-              <img src="/wp-content/uploads/2020/05/Droplet_Dynamics.png" alt="Droplet Dynamics Microchannel">
-            </figure>
-
-          </div>
+            </div><!-- /.entry-content -->
+          </div><!-- /.entry-wrap -->
         </div>
       </div>
     </div>
