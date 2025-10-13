@@ -6,14 +6,70 @@
   <link rel="stylesheet" href="/wp-content/themes/twentyten/style.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
-    .entry-content { max-width: 940px; margin: 0 auto; padding: 1rem; }
-    .entry-content p, .entry-content li { text-align: justify; text-justify: inter-word; line-height: 1.6; }
-    h1.entry-title { margin-bottom: .25rem; }
-    h3.section { margin: 1.25rem 0 .5rem; border-left: 4px solid #0073aa; padding-left: 8px; }
-    ul.clean { margin: .25rem 0 1rem 1.25rem; }
-    ul.clean li { margin: .25rem 0; }
-    /* top menu (keep consistent with other pages) */
-    #menu-top-menu { list-style:none; display:flex; gap:1rem; padding:0; margin:.5rem 0 0; }
+    :root {
+      --ink:#111;
+      --muted:#555;
+      --brand:#0073aa; /* WP blue */
+      --card:#ffffff;
+      --border:#e6e6e6;
+    }
+    body { color: var(--ink); }
+    .entry-wrap { max-width: 940px; margin: 0 auto; padding: 1rem; }
+    h1.entry-title { margin: .25rem 0 1rem; }
+    .section-title {
+      margin: 1.75rem 0 .75rem;
+      padding-left: 10px;
+      border-left: 4px solid var(--brand);
+      line-height: 1.2;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1rem;
+      box-shadow: 0 1px 0 rgba(0,0,0,.03);
+      margin-bottom: 1rem;
+    }
+    .card + .card { margin-top: .75rem; }
+
+    /* Lists */
+    .clean { list-style: none; padding: 0; margin: .25rem 0 0; }
+    .clean li { margin: .6rem 0; }
+    .muted { color: var(--muted); }
+
+    /* Teaching: compact, readable */
+    .teaching li { line-height: 1.5; }
+    .teaching strong { display: inline-block; min-width: 230px; }
+
+    /* Talks: title on first line; meta on second line */
+    .talk { margin: .8rem 0; }
+    .talk-title { font-weight: 600; }
+    .talk-meta { font-size: .95rem; color: var(--muted); }
+    .talk a { text-decoration: none; border-bottom: 1px dotted var(--brand); }
+    .talk a:hover { border-bottom-style: solid; }
+
+    /* Collaborators: 2-column grid on desktop, 1-column on mobile */
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: .6rem .75rem;
+    }
+    @media (min-width: 820px) {
+      .grid { grid-template-columns: 1fr 1fr; }
+    }
+    .collab-item { padding-left: .5rem; border-left: 3px solid var(--border); }
+    .collab-item strong { display: block; }
+    .collab-item span { display: block; font-size: .95rem; color: var(--muted); }
+
+    /* Keywords badges */
+    .badges { display: flex; flex-wrap: wrap; gap: .4rem .5rem; margin-top: .5rem; }
+    .badge {
+      font-size: .85rem; padding: .2rem .5rem; border: 1px solid var(--border);
+      border-radius: 999px; background:#fafafa;
+    }
+
+    /* Top menu tweak (consistent spacing/weight) */
+    #menu-top-menu { list-style:none; display:flex; gap:1rem; padding:0; margin:.5rem 0 0; flex-wrap: wrap; }
     #menu-top-menu li a { text-decoration:none; }
     .current-menu-item a { font-weight:700; }
   </style>
@@ -33,7 +89,7 @@
           <li class="menu-item"><a href="/">Home</a></li>
           <li class="menu-item"><a href="/research-projects/">Research Projects</a></li>
           <li class="menu-item"><a href="/whats-next/">What’s Next</a></li>
-          <li class="menu-item current-menu-item"><a href="/fun-projects/" aria-current="page">Academic Activity</a></li>
+          <li class="menu-item current-menu-item"><a href="/academic-activity/" aria-current="page">Academic Activity</a></li>
           <li class="menu-item"><a href="/wp-content/uploads/2021/10/Rahul_CV.pdf">CV</a></li>
         </ul>
       </div>
@@ -43,107 +99,133 @@
   <div id="main">
     <div id="container" class="one-column">
       <div id="content" role="main">
-        <h1 class="entry-title">Academic Activity</h1>
-        <div class="entry-content">
+        <div class="entry-wrap">
+          <h1 class="entry-title">Academic Activity</h1>
 
-          <h3 class="section"><strong>Teaching Experience</strong></h3>
-<ul class="clean">
-  <li>
-    <strong>Fluid Mechanics</strong> — Teaching Assistant in Bachelor-level Course and Laboratory, 
-    <em>National University of Singapore</em>.
-  </li>
-  <li>
-    <strong>Machine Design</strong> — Teaching Assistant in Bachelor-level Laboratory, 
-    <em>National University of Singapore</em>.
-  </li>
-  <li>
-    <strong>Fluid Mechanics</strong> — Instructor in Evening Classes of Bachelor-level Course, 
-    <em>National University of Singapore</em>.
-  </li>
-  <li>
-    <strong>Scientific Machine Learning for Fluid Mechanics</strong> — Invited as Guest Speaker 
-    for a one-hour lecture at <em>Indian Institute of Technology (IIT) Kanpur</em>.
-  </li>
-</ul>
+          <!-- Teaching -->
+          <h3 class="section-title">Teaching Experience</h3>
+          <div class="card">
+            <ul class="clean teaching">
+              <li>
+                <strong>Fluid Mechanics</strong> — Teaching Assistant in Bachelor-level Course & Laboratory,
+                <em>National University of Singapore</em>.
+              </li>
+              <li>
+                <strong>Machine Design</strong> — Teaching Assistant in Bachelor-level Laboratory,
+                <em>National University of Singapore</em>.
+              </li>
+              <li>
+                <strong>Fluid Mechanics</strong> — Instructor (Evening Classes), Bachelor-level Course,
+                <em>National University of Singapore</em>.
+              </li>
+              <li>
+                <strong>Scientific ML for Fluid Mechanics</strong> — Guest Speaker (1-hour lecture),
+                <em>IIT Kanpur</em>.
+              </li>
+            </ul>
+          </div>
 
+          <!-- Invited Talks -->
+          <h3 class="section-title">Invited Talks</h3>
+          <div class="card">
+            <div class="talk">
+              <div class="talk-title">Projection-Based and Data-Driven Reduced Order Models for Annealing Furnace</div>
+              <div class="talk-meta"><b>R. Halder</b>, G. Stabile, G. Reiss, W. Eßl, C. Mugrauer, E. Wimmer, G. Rozza. <em>Coupled Problems 2025</em>, Villasimius (Sardinia), 25–28 May 2025.</div>
+            </div>
+            <div class="talk">
+              <div class="talk-title">Physics Informed Neural Network Framework for Full Order and Reduced Order External CFD Solver</div>
+              <div class="talk-meta"><b>R. Halder</b>, G. Stabile, G. Rozza. <em>CASML 2024</em>, IISc Bangalore, India, 14–18 Dec 2024. <a href="https://casml.cc/wp-content/uploads/2024/12/RahulHalder_paper_pinns.pdf" target="_blank" rel="noreferrer noopener">Slides/Paper</a></div>
+            </div>
+            <div class="talk">
+              <div class="talk-title">Coupling Physics Informed Neural Networks with External CFD Solvers</div>
+              <div class="talk-meta"><b>R. Halder</b>, G. Stabile, G. Codega, G. Rozza. <em>ECCOMAS 2024</em>, Lisbon, Portugal, 3–7 Jun 2024.</div>
+            </div>
+            <div class="talk">
+              <div class="talk-title">An Adaptive Regularized ROM for the Quasi-Geostrophic Equations</div>
+              <div class="talk-meta"><b>R. Halder</b>, M. Girfoglio, G. Rozza. <em>SIAM UQ 2024</em>, Trieste, Italy, 27 Feb – 1 Mar 2024.</div>
+            </div>
+            <div class="talk">
+              <div class="talk-title">A Deep-Learning Enhanced Gappy-POD Method: Application in an Industrial Conjugate Heat Transfer Problem</div>
+              <div class="talk-meta"><b>R. Halder</b>, A. Hajisharifi, M. Girfoglio, G. Stabile, G. Rozza. <em>M2P 2023</em>, Taormina, Sicily, 30 May – 1 Jun 2023.</div>
+            </div>
+            <div class="talk">
+              <div class="talk-title">Discretized PDE-based Physics Informed Neural Network: Application in Fluid-Structure Interaction Problem</div>
+              <div class="talk-meta"><b>R. Halder</b>, G. Stabile, G. Rozza. <em>Coupled 2023</em>, Crete, Greece, 5–7 Jun 2023.</div>
+            </div>
+          </div>
 
-          <h3 class="section"><strong>Invited Talks</strong></h3>
-<ul class="clean">
-  <li>
-    <strong>Projection-Based and Data-Driven Reduced Order Models for Annealing Furnace</strong> — 
-    <b>R. Halder</b>, G. Stabile, G. Reiss, W. Eßl, C. Mugrauer, E. Wimmer, G. Rozza. 
-    <em>Coupled Problems 2025</em>, Villasimius (Sardinia), 25–28 May 2025.
-  </li>
+          <!-- Collaborators -->
+          <h3 class="section-title">Present Collaborators</h3>
+          <div class="card">
+            <div class="grid">
+              <div class="collab-item">
+                <strong>Dr. Giovanni Stabile</strong>
+                <span>Sant'Anna School of Advanced Studies, Italy — Discretized PINN project</span>
+              </div>
+              <div class="collab-item">
+                <strong>Dr. Alexander Heinlein</strong>
+                <span>TU Delft, Netherlands — Domain decomposition & preconditioning in Discretized PINN</span>
+              </div>
+              <div class="collab-item">
+                <strong>Dr. Niccolò Tonicello</strong>
+                <span>SISSA, Italy — Multiphase Flow PINN</span>
+              </div>
+              <div class="collab-item">
+                <strong>Dr. Arash Hajisharifi</strong>
+                <span>SISSA, Italy — ROM for Cerebrovascular Flow</span>
+              </div>
+              <div class="collab-item">
+                <strong>Prof. Gianluigi Rozza</strong>
+                <span>SISSA, Italy — Postdoc Mentor</span>
+              </div>
+              <div class="collab-item">
+                <strong>Dr. Anil Kumar Baccu</strong>
+                <span>IIT Patna, India — Transportation Problem</span>
+              </div>
+              <div class="collab-item">
+                <strong>Dr. Shouriya Agarwal</strong>
+                <span>University of Central Florida, USA — Transportation Problem</span>
+              </div>
+              <div class="collab-item">
+                <strong>Material Centre Leoben & Voestalpine</strong>
+                <span>Industrial collaboration — Digital Twin of Annealing Furnace</span>
+              </div>
+            </div>
+          </div>
 
-  <li>
-    <strong>Physics Informed Neural Network Framework for Full Order and Reduced Order External CFD Solver</strong> — 
-    <b>R. Halder</b>, G. Stabile, G. Rozza. 
-    <em>CASML 2024</em>, IISc Bangalore, India, 14–18 Dec 2024. 
-    <a href="https://casml.cc/wp-content/uploads/2024/12/RahulHalder_paper_pinns.pdf" target="_blank" rel="noreferrer noopener">Slides/Paper</a>
-  </li>
+          <!-- Book -->
+          <h3 class="section-title">Ongoing Book Project</h3>
+          <div class="card">
+            <ul class="clean">
+              <li><strong>Textbook:</strong> Currently writing a textbook on <em>Computational Fluid Dynamics</em> with <b>Prof. Gianluigi Rozza</b>.</li>
+              <li><span class="muted">Scope:</span> Stabilized Finite Element Methods, Finite Volume Approach.</li>
+              <li><span class="muted">Status:</span> Drafting initial chapters.</li>
+              <li><span class="muted">Target publisher:</span> Springer.</li>
+            </ul>
+          </div>
 
-  <li>
-    <strong>Coupling Physics Informed Neural Networks with External CFD Solvers</strong> — 
-    <b>R. Halder</b>, G. Stabile, G. Codega, G. Rozza. 
-    <em>ECCOMAS 2024</em>, Lisbon, Portugal, 3–7 Jun 2024.
-  </li>
+          <!-- Minisymposium -->
+          <h3 class="section-title">Mini-Symposium Organization</h3>
+          <div class="card">
+            <p><strong>IS038 — Model Order Reduction, Scientific Machine Learning and Uncertainty Quantification for Large Scale, Complex Geometry and Multi-physics Problems</strong></p>
+            <p class="muted">
+              Organized by: <b>G. Stabile</b> (Sant'Anna School of Advanced Studies, Italy),
+              <b>B. Rosic</b> (University of Twente, Netherlands),
+              <b>R. Halder</b> (SISSA, Italy), and
+              <b>R. Maulik</b> (The Pennsylvania State University, United States).
+            </p>
+            <p class="muted">
+              <em>COUPLED 2025</em>, Villasimius, Sardinia, 25–28 May 2025.
+              <a href="https://coupled2025.cimne.com/event/area/3da8c13d-70ff-11ef-bbc6-000c29ddfc0c" target="_blank" rel="noreferrer noopener">Event page</a>
+            </p>
+            <div class="badges">
+              <span class="badge">ROM</span>
+              <span class="badge">Scientific ML</span>
+              <span class="badge">UQ</span>
+            </div>
+          </div>
 
-  <li>
-    <strong>An Adaptive Regularized ROM for the Quasi-Geostrophic Equations</strong> — 
-    <b>R. Halder</b>, M. Girfoglio, G. Rozza. 
-    <em>SIAM UQ 2024</em>, Trieste, Italy, 27 Feb – 1 Mar 2024.
-  </li>
-
-  <li>
-    <strong>A Deep-Learning Enhanced Gappy-POD Method: Application in an Industrial Conjugate Heat Transfer Problem</strong> — 
-    <b>R. Halder</b>, A. Hajisharifi, M. Girfoglio, G. Stabile, G. Rozza. 
-    <em>M2P 2023</em>, Taormina, Sicily, 30 May – 1 Jun 2023.
-  </li>
-
-  <li>
-    <strong>Discretized PDE-based Physics Informed Neural Network: Application in Fluid-Structure Interaction Problem</strong> — 
-    <b>R. Halder</b>, G. Stabile, G. Rozza. 
-    <em>Coupled 2023</em>, Crete, Greece, 5–7 Jun 2023.
-  </li>
-</ul>
-
-
-          <h3 class="section"><strong>Present Collaborators</strong></h3>
-          <ul class="clean">
-            <li>Dr. Giovanni Stabile — Sant'Anna School of Advanced Studies, Italy (topic: Discretized PINN project)</li>
-            <li>Dr. Alexander Heinlein — TU Delft, Netherlands (topic: Combining Domain Decomposition and Preconditioning approach in Discretized PINN)</li>
-            <li>Dr. Niccolò Tonicello — International School for Advanced Studies, Italy (topic: Multiphase Flow PINN)</li>
-            <li>Dr. Arash Hajisharifi — International School for Advanced Studies, Italy (topic: ROM for Cerebrovascular Flow)</li>
-            <li>Prof. Gianluigi Rozza — International School for Advanced Studies, Italy (Postdoc Mentor)</li>
-            <li>Dr. Anil Kumar Baccu — IIT Patna, India (Transportation Problem)</li>
-            <li>Dr. Shouriya Agarwal — University of Central Florida, USA (Transportation Problem)</li>
-            <li>Material Centre Leoben, Austria and Voestalpine — Industrial Collaboration (topic: Digital Twin of Annealing Furnace)</li>
-          </ul>
-
-          <h3 class="section"><strong>Ongoing Book Project</strong></h3>
-<ul class="clean">
-  <li><strong>Textbook:</strong> Currently writing a textbook on <em>Computational Fluid Dynamics</em> with <b>Prof. Gianluigi Rozza</b>.</li>
-  <li><em>Scope:</em> Stabilized Finite Element Methods, Finite Volume Approach.</li>
-  <li><em>Status:</em> drafting initial chapters.</li>
-  <li><em>Target publisher:</em> (Springer)</li>
-</ul>
-
-          <h3 class="section"><strong>Mini-Symposium Organization</strong></h3>
-<ul class="clean">
-  <li>
-    <strong>IS038 - Model Order Reduction, Scientific Machine Learning and Uncertainty Quantification for Large Scale, Complex Geometry and Multi-physics Problems</strong><br>
-    Organized by: <b>G. Stabile</b> (Sant'Anna School of Advanced Studies, Italy), 
-    <b>B. Rosic</b> (University of Twente, Netherlands), 
-    <b>R. Halder</b> (SISSA, Italy), and 
-    <b>R. Maulik</b> (The Pennsylvania State University, United States).<br>
-    <em>COUPLED 2025</em>, Villasimius, Sardinia, 25–28 May 2025. 
-    <a href="https://coupled2025.cimne.com/event/area/3da8c13d-70ff-11ef-bbc6-000c29ddfc0c" target="_blank" rel="noreferrer noopener">Event page</a><br>
-    <em>Keywords:</em> reduced order model (ROM), scientific machine learning, UQ
-  </li>
-</ul>
-
-
-        </div>
+        </div><!-- /.entry-wrap -->
       </div>
     </div>
   </div>
