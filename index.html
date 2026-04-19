@@ -1,245 +1,247 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <meta charset="UTF-8" />
-  <title>Academic Activity | Rahul Halder</title>
-  <link rel="stylesheet" href="/wp-content/themes/twentyten/style.css" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Rahul Halder </title>
+
   <style>
     :root {
-      --ink:#111;
-      --muted:#555;
-      --brand:#0073aa; /* WP blue */
-      --card:#ffffff;
-      --border:#e6e6e6;
+      --container: 940px;
+      --text: #222;
+      --muted: #555;
+      --line: #e9e9e9;
+      --link: #0b5fff;
     }
-    body { color: var(--ink); }
-    .entry-wrap { max-width: 940px; margin: 0 auto; padding: 1rem; }
-    h1.entry-title { margin: .25rem 0 1rem; }
-    .section-title {
-      margin: 1.75rem 0 .75rem;
-      padding-left: 10px;
-      border-left: 4px solid var(--brand);
-      line-height: 1.2;
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      color: var(--text);
+      font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      background: #fff;
     }
-    .card {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 1rem;
-      box-shadow: 0 1px 0 rgba(0,0,0,.03);
-      margin-bottom: 1rem;
+
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .wrap { max-width: var(--container); margin: 0 auto; padding: 0 16px; }
+
+    header { padding: 18px 0 8px; border-bottom: 1px solid var(--line); }
+
+    #site-title { margin: 0 0 4px; font-size: 28px; }
+    #site-title a { color: inherit; }
+
+    #site-description { color: var(--muted); margin-bottom: 12px; }
+
+    .banner img { width: 100%; border-radius: 6px; }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
     }
-    .card + .card { margin-top: .75rem; }
 
-    /* Lists */
-    .clean { list-style: none; padding: 0; margin: .25rem 0 0; }
-    .clean li { margin: .6rem 0; }
-    .muted { color: var(--muted); }
+    main { padding: 18px 0 32px; }
 
-    /* Teaching: compact, readable */
-    .teaching li { line-height: 1.5; }
-    .teaching strong { display: inline-block; min-width: 230px; }
+    /* ================= BLUE HEADLINES ================= */
+    h2, h3, .category-title {
+      color: var(--link);
+    }
 
-    /* Talks: title on first line; meta on second line */
-    .talk { margin: .8rem 0; }
-    .talk-title { font-weight: 600; }
-    .talk-meta { font-size: .95rem; color: var(--muted); }
-    .talk a { text-decoration: none; border-bottom: 1px dotted var(--brand); }
-    .talk a:hover { border-bottom-style: solid; }
+    h2, h3 {
+      margin: 1.2rem 0 .6rem;
+    }
 
-    /* Collaborators: 2-column grid on desktop, 1-column on mobile */
-    .grid {
+    .category-title {
+      margin-top: 28px;
+      font-size: 18px;
+      font-weight: 600;
+      border-top: 2px solid var(--line);
+      padding-top: 10px;
+    }
+
+    /* ================================================== */
+
+    .pub-row {
       display: grid;
-      grid-template-columns: 1fr;
-      gap: .6rem .75rem;
-    }
-    @media (min-width: 820px) {
-      .grid { grid-template-columns: 1fr 1fr; }
-    }
-    .collab-item { padding-left: .5rem; border-left: 3px solid var(--border); }
-    .collab-item strong { display: block; }
-    .collab-item span { display: block; font-size: .95rem; color: var(--muted); }
-
-    /* Keywords badges */
-    .badges { display: flex; flex-wrap: wrap; gap: .4rem .5rem; margin-top: .5rem; }
-    .badge {
-      font-size: .85rem; padding: .2rem .5rem; border: 1px solid var(--border);
-      border-radius: 999px; background:#fafafa;
+      grid-template-columns: 1fr 220px;
+      gap: 14px;
+      padding: 10px 0;
+      border-top: 1px dashed var(--line);
     }
 
-    /* Top menu tweak (consistent spacing/weight) */
-    #menu-top-menu { list-style:none; display:flex; gap:1rem; padding:0; margin:.5rem 0 0; flex-wrap: wrap; }
-    #menu-top-menu li a { text-decoration:none; }
-    .current-menu-item a { font-weight:700; }
+    .pub-link { text-align: right; }
+
+    @media (max-width: 720px) {
+      .pub-row { grid-template-columns: 1fr; }
+      .pub-link { text-align: left; }
+    }
+
+    .about {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: #fafafa;
+      margin: 20px 0 12px;
+    }
+
+    .about img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .sidebar { padding: 6px 0 28px; border-top: 1px solid var(--line); }
+
   </style>
 </head>
-<body class="page">
-<div id="wrapper" class="hfeed">
-  <div id="header">
-    <div id="masthead">
-      <div id="branding" role="banner">
-        <div id="site-title"><span><a href="/" rel="home">Rahul Halder</a></span></div>
-        <div id="site-description">Personal website</div>
-      </div>
 
-      <!-- Top nav -->
-      <div id="access" role="navigation">
-        <ul id="menu-top-menu" class="menu">
-          <li><a href="/">Home</a></li>
-          <li><a href="/research-projects/">Research projects</a></li>
-          <li class="menu-item"><a href="/spidey/">What’s Next</a></li>
-          <li class="menu-item"><a href="/fun-projects/">Academic Activity</a></li>
-          <li><a href="/wp-content/uploads/2020/05/RahulCV.pdf">CV</a></li>
-        </ul>
-      </div>
-    </div>
+<body>
+
+<header>
+<div class="wrap">
+  <h1 id="site-title"><a href="/">Rahul Halder</a></h1>
+  <div id="site-description">Personal website</div>
+
+  <div class="banner">
+    <img src="/wp-content/uploads/2020/05/pod_deim.gif">
   </div>
 
-  <div id="main">
-    <div id="container" class="one-column">
-      <div id="content" role="main">
-        <div class="entry-wrap">
-          <h1 class="entry-title">Academic Activity</h1>
-
-          <!-- Teaching -->
-          <h3 class="section-title">Teaching Experience</h3>
-          <div class="card">
-            <ul class="clean teaching">
-              <li>
-                <strong>Fluid Mechanics</strong> — Teaching Assistant in Bachelor-level Course & Laboratory,
-                <em>National University of Singapore</em>.
-              </li>
-              <li>
-                <strong>Machine Design</strong> — Teaching Assistant in Bachelor-level Laboratory,
-                <em>National University of Singapore</em>.
-              </li>
-              <li>
-                <strong>Fluid Mechanics</strong> — Instructor (Evening Classes), Bachelor-level Course,
-                <em>National University of Singapore</em>.
-              </li>
-              <li>
-                <strong>Scientific ML for Fluid Mechanics</strong> — Guest Speaker (1-hour lecture),
-                <em>IIT Kanpur</em>.
-              </li>
-            </ul>
-          </div>
-
-          <!-- Invited Talks -->
-          <h3 class="section-title">Invited Talks</h3>
-          <div class="card">
-            <div class="talk">
-              <div class="talk-title">Projection-Based and Data-Driven Reduced Order Models for Annealing Furnace</div>
-              <div class="talk-meta"><b>R. Halder</b>, G. Stabile, G. Reiss, W. Eßl, C. Mugrauer, E. Wimmer, G. Rozza. <em>Coupled Problems 2025</em>, Villasimius (Sardinia), 25–28 May 2025.</div>
-            </div>
-            <div class="talk">
-              <div class="talk-title">Physics Informed Neural Network Framework for Full Order and Reduced Order External CFD Solver</div>
-              <div class="talk-meta"><b>R. Halder</b>, G. Stabile, G. Rozza. <em>CASML 2024</em>, IISc Bangalore, India, 14–18 Dec 2024. <a href="https://casml.cc/wp-content/uploads/2024/12/RahulHalder_paper_pinns.pdf" target="_blank" rel="noreferrer noopener">Slides/Paper</a></div>
-            </div>
-            <div class="talk">
-              <div class="talk-title">Coupling Physics Informed Neural Networks with External CFD Solvers</div>
-              <div class="talk-meta"><b>R. Halder</b>, G. Stabile, G. Codega, G. Rozza. <em>ECCOMAS 2024</em>, Lisbon, Portugal, 3–7 Jun 2024.</div>
-            </div>
-            <div class="talk">
-              <div class="talk-title">An Adaptive Regularized ROM for the Quasi-Geostrophic Equations</div>
-              <div class="talk-meta"><b>R. Halder</b>, M. Girfoglio, G. Rozza. <em>SIAM UQ 2024</em>, Trieste, Italy, 27 Feb – 1 Mar 2024.</div>
-            </div>
-            <div class="talk">
-              <div class="talk-title">A Deep-Learning Enhanced Gappy-POD Method: Application in an Industrial Conjugate Heat Transfer Problem</div>
-              <div class="talk-meta"><b>R. Halder</b>, A. Hajisharifi, M. Girfoglio, G. Stabile, G. Rozza. <em>M2P 2023</em>, Taormina, Sicily, 30 May – 1 Jun 2023.</div>
-            </div>
-            <div class="talk">
-              <div class="talk-title">Discretized PDE-based Physics Informed Neural Network: Application in Fluid-Structure Interaction Problem</div>
-              <div class="talk-meta"><b>R. Halder</b>, G. Stabile, G. Rozza. <em>Coupled 2023</em>, Crete, Greece, 5–7 Jun 2023.</div>
-            </div>
-          </div>
-
-          <!-- Collaborators -->
-          <h3 class="section-title">Present Collaborators</h3>
-          <div class="card">
-            <div class="grid">
-              <div class="collab-item">
-                <strong>Dr. Giovanni Stabile</strong>
-                <span>Associate Professor at Sant'Anna School of Advanced Studies, Italy — Discretized PINN project</span>
-              </div>
-              <div class="collab-item">
-                <strong>Dr. Alexander Heinlein</strong>
-                <span>Assistant Porfessor at TU Delft, Netherlands — Domain decomposition & preconditioning in Discretized PINN</span>
-              </div>
-              <div class="collab-item">
-                <strong>Dr. Niccolò Tonicello</strong>
-                <span>Assistant Professor at SISSA, Italy — Multiphase Flow PINN</span>
-              </div>
-              <div class="collab-item">
-                <strong>Dr. Arash Hajisharifi</strong>
-                <span>Post Doctoral Researcher at SISSA, Italy — ROM for Cerebrovascular Flow</span>
-              </div>
-              <div class="collab-item">
-                <strong>Prof. Gianluigi Rozza</strong>
-                <span>Professor at SISSA, Italy — Postdoc Mentor</span>
-              </div>
-              <div class="collab-item">
-                <strong>Dr. Anil Kumar Bachu</strong>
-                <span>Assistant Professor at IIT Patna, India — Transportation Problem</span>
-              </div>
-              <div class="collab-item">
-                <strong>Dr. Shouriya Agarwal</strong>
-                <span>Associate Professor at University of Central Florida, USA — Transportation Problem</span>
-              </div>
-              <div class="collab-item">
-                <strong>Dr. Chandan Bose</strong>
-                <span>Assistant Professor at  University of Birmingham, UK — Bio-FSI</span>
-              </div>
-              
-              <div class="collab-item">
-                <strong>Material Centre Leoben & Voestalpine</strong>
-                <span>Industrial collaboration — Digital Twin of Annealing Furnace</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Book -->
-          <h3 class="section-title">Ongoing Book Project</h3>
-          <div class="card">
-            <ul class="clean">
-              <li><strong>Textbook:</strong> Currently writing a textbook on <em>Computational Fluid Dynamics</em> with <b>Prof. Gianluigi Rozza</b>.</li>
-              <li><span class="muted">Scope:</span> Stabilized Finite Element Methods, Finite Volume Approach.</li>
-              <li><span class="muted">Status:</span> Drafting initial chapters.</li>
-              <li><span class="muted">Target publisher:</span> Springer.</li>
-            </ul>
-          </div>
-
-          <!-- Minisymposium -->
-          <h3 class="section-title">Mini-Symposium Organization</h3>
-          <div class="card">
-            <p><strong>IS038 — Model Order Reduction, Scientific Machine Learning and Uncertainty Quantification for Large Scale, Complex Geometry and Multi-physics Problems</strong></p>
-            <p class="muted">
-              Organized by: <b>G. Stabile</b> (Sant'Anna School of Advanced Studies, Italy),
-              <b>B. Rosic</b> (University of Twente, Netherlands),
-              <b>R. Halder</b> (SISSA, Italy), and
-              <b>R. Maulik</b> (The Pennsylvania State University, United States).
-            </p>
-            <p class="muted">
-              <em>COUPLED 2025</em>, Villasimius, Sardinia, 25–28 May 2025.
-              <a href="https://coupled2025.cimne.com/event/area/3da8c13d-70ff-11ef-bbc6-000c29ddfc0c" target="_blank" rel="noreferrer noopener">Event page</a>
-            </p>
-            <div class="badges">
-              <span class="badge">ROM</span>
-              <span class="badge">Scientific ML</span>
-              <span class="badge">UQ</span>
-            </div>
-          </div>
-
-        </div><!-- /.entry-wrap -->
-      </div>
-    </div>
-  </div>
-
-  <div id="footer" role="contentinfo">
-    <div id="colophon">
-      <div id="site-info"><a href="/" rel="home">Rahul Halder</a></div>
-    </div>
-  </div>
+  <nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/research-projects/">Research projects</a></li>
+      <li><a href="/spidey/">What’s Next</a></li>
+      <li><a href="/fun-projects/">Academic Activity</a></li>
+      <li><a href="/wp-content/uploads/2020/05/RahulCV.pdf">CV</a></li>
+    </ul>
+  </nav>
 </div>
+</header>
+
+<main class="wrap">
+
+<h2>Home</h2>
+
+<div class="entry">
+
+<h3>Expertise</h3>
+<p>Model Order Reduction · Scientific Machine Learning · Computational Mechanics · Fluid-Structure Interaction · Multiphysics Modeling</p>
+
+<h3>Application Areas</h3>
+<p>Biomedical Engineering · Industrial Systems · Aeroelasticity · Wave–Structure Interaction · Microfluidics</p>
+
+<hr/>
+
+<h3><strong>Academic history</strong></h3>
+
+<p>
+I was born in Kolkata and spent my childhood and teenage years in a small town named Chandpara in West Bengal. I earned my Bachelor of
+Engineering degree in <b> Mechanical Engineering at Jadavpur University </b>, Kolkata, India in 2013. Next, I went to the <b>Indian Institute of
+Technology, Madras for a Master of Technology degree</b> with a focus on the fluid and thermal branch. In 2015, I arrived in Singapore,
+the red dot of South Asia and there I developed my interest in reduced order modelling and scientific machine learning during my PhD.
+at the <b>National University of Singapore, Mechanical Engineering Department</b>, with an application in the field of transonic aeroelasticity. Next, I
+worked at the <b>University of Michigan, Aerospace Engineering Department</b>, as a post-doc fellow on high aspect ratio wing aeroelasticity.
+I continued my continental jump and am currently working at the <b>Mathematics Department, International School for Advanced Studies (SISSA)</b>
+in Trieste, Italy, a beautiful coastal town by the Adriatic Sea.
+</p>
+
+<hr/>
+
+<h2>Journal Publications</h2>
+
+<p>
+<a href="https://scholar.google.com.sg/citations?user=uIe-AjkAAAAJ&hl=en">Google Scholar</a>
+· <a href="https://www.researchgate.net/profile/Rahul-Halder">ResearchGate</a>
+· <a href="https://www.linkedin.com/in/rahul-halder-8b964b105/">LinkedIn</a>
+</p>
+
+<!-- CATEGORY 1 -->
+<div class="category-title">Reduced Order Modeling & Scientific Machine Learning</div>
+
+<div class="pub-row">
+  <div><p>"Model Order Reduction of Cerebrovascular Hemodynamics Using POD–Galerkin and Reservoir Computing-based Approach" (2026)<br/><b>Halder R.</b></p></div>
+  <div class="pub-link"><p><a href="https://arxiv.org/abs/2603.18837">arXiv</a></p></div>
+</div>
+
+<div class="pub-row">
+  <div><p>"Coupling Physics Informed Neural Networks with External Solvers." (2025)<br/><b>Halder R.</b></p></div>
+  <div class="pub-link"><p><a href="http://arxiv.org/abs/2509.24615">arXiv</a></p></div>
+</div>
+
+<div class="pub-row">
+  <div><p>"A Deep-Learning Enhanced Gappy-POD Method: Application in an Industrial Conjugate Heat Transfer Problem." (2025)</p></div>
+  <div class="pub-link"><p><a href="http://arxiv.org/abs/2508.20633">arXiv</a></p></div>
+</div>
+
+<div class="pub-row">
+  <div><p>"Physics Informed Neural Network Framework for Unsteady Discretized Reduced Order System." (2025)</p></div>
+  <div class="pub-link"><p><a href="https://doi.org/10.1016/j.camwa.2025.05.004">CAMWA</a></p></div>
+</div>
+
+<div class="pub-row">
+  <div><p>"A LSTM-enhanced surrogate model to simulate the dynamics of particle-laden fluid systems." (2024)</p></div>
+  <div class="pub-link"><p><a href="https://doi.org/10.1016/j.compfluid.2024.106361">Computers & Fluids</a></p></div>
+</div>
+
+<!-- CATEGORY 2 -->
+<div class="category-title">Aeroelasticity & Wave–Structure Interaction</div>
+
+<div class="pub-row">
+  <div><p>"Deep learning-driven nonlinear reduced-order models for predicting wave-structure interaction." (2023)</p></div>
+  <div class="pub-link"><p><a href="https://doi.org/10.1016/j.oceaneng.2023.114511">Ocean Engineering</a></p></div>
+</div>
+
+<div class="pub-row">
+  <div><p>"Computational Assessment of Transonic Airfoil-Gust Aeroelastic Response." (2022)</p></div>
+  <div class="pub-link"><p><a href="https://arc.aiaa.org/doi/abs/10.2514/1.J060344">AIAA J</a></p></div>
+</div>
+
+<div class="pub-row">
+  <div><p>"A Deep-Learning-Based Nonlinear Reduced Order Model for Airfoil Gust and Aileron Buzz Response." (2020)</p></div>
+  <div class="pub-link"><p><a href="https://arc.aiaa.org/doi/abs/10.2514/1.J059027">AIAA J</a></p></div>
+</div>
+
+<div class="pub-row">
+  <div><p>"A Signal Interpolation Approach Augmented Linear Non-Intrusive Reduced Order Model for Aeroelastic Applications." (2020)</p></div>
+  <div class="pub-link"><p><a href="https://arc.aiaa.org/doi/abs/10.2514/1.J058529">AIAA J</a></p></div>
+</div>
+
+<!-- CATEGORY 3 -->
+<div class="category-title">Multiphase Flow & Microfluidics</div>
+
+<div class="pub-row">
+  <div><p>"Droplet generation in a microchannel with a controllable deformable wall." (2016)</p></div>
+  <div class="pub-link"><p><a href="https://link.springer.com/article/10.1007/s10404-016-1768-4">Microfluidics and Nanofluidics</a></p></div>
+</div>
+
+</div>
+</main>
+
+<div class="wrap">
+
+<section class="about">
+  <img src="/wp-content/uploads/2020/05/Myimage.jpg">
+  <div>
+    <strong>Rahul Halder</strong> — Postdoc at SISSA. Data-driven and physics-based reduced-order modeling for multiphysics systems.
+  </div>
+</section>
+
+<aside class="sidebar">
+<h3>Contact</h3>
+<p>Email: rhalder [at] sissa [dot] it</p>
+</aside>
+
+</div>
+
 </body>
 </html>
