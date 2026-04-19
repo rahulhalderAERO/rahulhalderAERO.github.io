@@ -1,16 +1,233 @@
-<!-- Supervision -->
-<h3 class="section-title">Supervision & Training</h3>
-<div class="card">
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8" />
+  <title>Academic Activity | Rahul Halder</title>
+  <link rel="stylesheet" href="/wp-content/themes/twentyten/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <p><strong>PhD Training</strong></p>
-  <ul class="clean">
-    <li>(A) Qusain Haider — Geophysical Flow</li>
-    <li>(B) Niccolo Picchiarelli — Optimization in PINN Framework</li>
-  </ul>
+  <style>
+    :root {
+      --ink:#111;
+      --muted:#555;
+      --brand:#0073aa;
+      --card:#ffffff;
+      --border:#e6e6e6;
+    }
 
-  <p style="margin-top:1rem;"><strong>Masters Training</strong></p>
-  <ul class="clean">
-    <li>(A) Harishwar Aditya S — Oceanographic Model</li>
-  </ul>
+    body { color: var(--ink); }
+
+    .entry-wrap { max-width: 940px; margin: 0 auto; padding: 1rem; }
+
+    h1.entry-title { margin: .25rem 0 1rem; }
+
+    .section-title {
+      margin: 1.75rem 0 .75rem;
+      padding-left: 10px;
+      border-left: 4px solid var(--brand);
+      line-height: 1.2;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1rem;
+      box-shadow: 0 1px 0 rgba(0,0,0,.03);
+      margin-bottom: 1rem;
+    }
+
+    .clean { list-style: none; padding: 0; margin: .25rem 0 0; }
+    .clean li { margin: .6rem 0; }
+    .muted { color: var(--muted); }
+
+    .teaching li { line-height: 1.5; }
+    .teaching strong { display: inline-block; min-width: 230px; }
+
+    .talk { margin: .8rem 0; }
+    .talk-title { font-weight: 600; }
+    .talk-meta { font-size: .95rem; color: var(--muted); }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: .6rem .75rem;
+    }
+
+    @media (min-width: 820px) {
+      .grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    .collab-item {
+      padding-left: .5rem;
+      border-left: 3px solid var(--border);
+    }
+
+    .collab-item strong { display: block; }
+    .collab-item span { display: block; font-size: .95rem; color: var(--muted); }
+
+    .badges { display: flex; flex-wrap: wrap; gap: .4rem .5rem; margin-top: .5rem; }
+
+    .badge {
+      font-size: .85rem;
+      padding: .2rem .5rem;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background:#fafafa;
+    }
+
+    #menu-top-menu {
+      list-style:none;
+      display:flex;
+      gap:1rem;
+      padding:0;
+      margin:.5rem 0 0;
+      flex-wrap: wrap;
+    }
+  </style>
+</head>
+
+<body class="page">
+
+<div id="wrapper" class="hfeed">
+
+  <div id="header">
+    <div id="masthead">
+      <div id="branding">
+        <div id="site-title"><span><a href="/">Rahul Halder</a></span></div>
+        <div id="site-description">Personal website</div>
+      </div>
+
+      <div id="access">
+        <ul id="menu-top-menu" class="menu">
+          <li><a href="/">Home</a></li>
+          <li><a href="/research-projects/">Research projects</a></li>
+          <li><a href="/spidey/">What’s Next</a></li>
+          <li><a href="/fun-projects/">Academic Activity</a></li>
+          <li><a href="/wp-content/uploads/2020/05/RahulCV.pdf">CV</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="main">
+    <div id="container" class="one-column">
+      <div id="content">
+
+        <div class="entry-wrap">
+
+          <h1 class="entry-title">Academic Activity</h1>
+
+          <!-- Teaching -->
+          <h3 class="section-title">Teaching Experience</h3>
+          <div class="card">
+            <ul class="clean teaching">
+              <li><strong>Fluid Mechanics</strong> — Teaching Assistant, National University of Singapore</li>
+              <li><strong>Machine Design</strong> — Teaching Assistant, National University of Singapore</li>
+              <li><strong>Fluid Mechanics</strong> — Instructor (Evening Classes), National University of Singapore</li>
+              <li><strong>Scientific ML for Fluid Mechanics</strong> — Guest Lecture, IIT Kanpur</li>
+            </ul>
+          </div>
+
+          <!-- Invited Talks -->
+          <h3 class="section-title">Invited Talks</h3>
+          <div class="card">
+
+            <div class="talk">
+              <div class="talk-title">Projection-Based and Data-Driven Reduced Order Models for Annealing Furnace</div>
+              <div class="talk-meta">
+                <b>R. Halder</b>, G. Stabile, G. Reiss, W. Eßl, C. Mugrauer, E. Wimmer, G. Rozza. 
+                <em>Coupled Problems 2025</em>, Villasimius (Sardinia), 25–28 May 2025.
+              </div>
+            </div>
+
+            <div class="talk">
+              <div class="talk-title">Physics Informed Neural Network Framework for Full Order and Reduced Order External CFD Solver</div>
+              <div class="talk-meta">
+                <b>R. Halder</b>, G. Stabile, G. Rozza. 
+                <em>CASML 2024</em>, IISc Bangalore, 14–18 Dec 2024. 
+                <a href="https://casml.cc/wp-content/uploads/2024/12/RahulHalder_paper_pinns.pdf">Slides/Paper</a>
+              </div>
+            </div>
+
+            <div class="talk">
+              <div class="talk-title">Coupling Physics Informed Neural Networks with External CFD Solvers</div>
+              <div class="talk-meta">
+                <b>R. Halder</b>, G. Stabile, G. Codega, G. Rozza. 
+                <em>ECCOMAS 2024</em>, Lisbon, 3–7 Jun 2024.
+              </div>
+            </div>
+
+            <div class="talk">
+              <div class="talk-title">An Adaptive Regularized ROM for the Quasi-Geostrophic Equations</div>
+              <div class="talk-meta">
+                <b>R. Halder</b>, M. Girfoglio, G. Rozza. 
+                <em>SIAM UQ 2024</em>, Trieste, 27 Feb – 1 Mar 2024.
+              </div>
+            </div>
+
+            <div class="talk">
+              <div class="talk-title">A Deep-Learning Enhanced Gappy-POD Method</div>
+              <div class="talk-meta">
+                <b>R. Halder</b>, A. Hajisharifi, M. Girfoglio, G. Stabile, G. Rozza. 
+                <em>M2P 2023</em>, Taormina, 30 May – 1 Jun 2023.
+              </div>
+            </div>
+
+            <div class="talk">
+              <div class="talk-title">Discretized PDE-based PINN for Fluid-Structure Interaction</div>
+              <div class="talk-meta">
+                <b>R. Halder</b>, G. Stabile, G. Rozza. 
+                <em>Coupled 2023</em>, Crete, 5–7 Jun 2023.
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Supervision -->
+          <h3 class="section-title">Supervision & Training</h3>
+          <div class="card">
+
+            <p><strong>PhD Training</strong></p>
+            <ul class="clean">
+              <li>(A) Qusain Haider — Geophysical Flow</li>
+              <li>(B) Niccolo Picchiarelli — Optimization in PINN Framework</li>
+            </ul>
+
+            <p style="margin-top:1rem;"><strong>Masters Training</strong></p>
+            <ul class="clean">
+              <li>(A) Harishwar Aditya S — Oceanographic Model</li>
+            </ul>
+
+          </div>
+
+          <!-- Collaborators -->
+          <h3 class="section-title">Present Collaborators</h3>
+          <div class="card">
+            <div class="grid">
+              <div class="collab-item"><strong>Giovanni Stabile</strong><span>Sant'Anna School</span></div>
+              <div class="collab-item"><strong>Alexander Heinlein</strong><span>TU Delft</span></div>
+              <div class="collab-item"><strong>Niccolò Tonicello</strong><span>SISSA</span></div>
+              <div class="collab-item"><strong>Arash Hajisharifi</strong><span>SISSA</span></div>
+              <div class="collab-item"><strong>Gianluigi Rozza</strong><span>SISSA</span></div>
+            </div>
+          </div>
+
+          <!-- Book -->
+          <h3 class="section-title">Ongoing Book Project</h3>
+          <div class="card">
+            <ul class="clean">
+              <li>Computational Fluid Dynamics textbook with Prof. Gianluigi Rozza</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
 
 </div>
+
+</body>
+</html>
