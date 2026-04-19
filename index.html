@@ -13,6 +13,7 @@
       --line: #e9e9e9;
       --link: #0b5fff;
     }
+
     * { box-sizing: border-box; }
 
     body {
@@ -47,7 +48,24 @@
 
     main { padding: 18px 0 32px; }
 
-    h2, h3 { margin: 1.2rem 0 .6rem; }
+    /* ================= BLUE HEADLINES ================= */
+    h2, h3, .category-title {
+      color: var(--link);
+    }
+
+    h2, h3 {
+      margin: 1.2rem 0 .6rem;
+    }
+
+    .category-title {
+      margin-top: 28px;
+      font-size: 18px;
+      font-weight: 600;
+      border-top: 2px solid var(--line);
+      padding-top: 10px;
+    }
+
+    /* ================================================== */
 
     .pub-row {
       display: grid;
@@ -82,15 +100,8 @@
       border-radius: 10px;
     }
 
-    .category-title {
-      margin-top: 28px;
-      font-size: 18px;
-      font-weight: 600;
-      border-top: 2px solid var(--line);
-      padding-top: 10px;
-    }
-
     .sidebar { padding: 6px 0 28px; border-top: 1px solid var(--line); }
+
   </style>
 </head>
 
@@ -141,7 +152,7 @@ the red dot of South Asia and there I developed my interest in reduced order mod
 at the <b>National University of Singapore, Mechanical Engineering Department</b>, with an application in the field of transonic aeroelasticity. Next, I
 worked at the <b>University of Michigan, Aerospace Engineering Department</b>, as a post-doc fellow on high aspect ratio wing aeroelasticity.
 I continued my continental jump and am currently working at the <b>Mathematics Department, International School for Advanced Studies (SISSA)</b>
-in Trieste, Italy, a beautiful coastal town by the Adriatic Sea. My research expertise includes Fluid Dynamics (Compressible Flow, Fluid-Solid Interaction, Multiphase Flow), Model Order Reduction, Scientific Machine Learning and Computational Mechanics. I enjoy teaching and have given several talks at international and national conferences.
+in Trieste, Italy, a beautiful coastal town by the Adriatic Sea.
 </p>
 
 <hr/>
@@ -157,31 +168,61 @@ in Trieste, Italy, a beautiful coastal town by the Adriatic Sea. My research exp
 <!-- CATEGORY 1 -->
 <div class="category-title">Reduced Order Modeling & Scientific Machine Learning</div>
 
-<div class="pub-row"><div><p>"Model Order Reduction of Cerebrovascular Hemodynamics Using POD–Galerkin and Reservoir Computing-based Approach" (2026)<br/><b>Halder R.</b></p></div><div class="pub-link"><p><a href="https://arxiv.org/abs/2603.18837">arXiv</a></p></div></div>
+<div class="pub-row">
+  <div><p>"Model Order Reduction of Cerebrovascular Hemodynamics Using POD–Galerkin and Reservoir Computing-based Approach" (2026)<br/><b>Halder R.</b></p></div>
+  <div class="pub-link"><p><a href="https://arxiv.org/abs/2603.18837">arXiv</a></p></div>
+</div>
 
-<div class="pub-row"><div><p>"Coupling Physics Informed Neural Networks with External Solvers." (2025)<br/><b>Halder R.</b></p></div><div class="pub-link"><p><a href="http://arxiv.org/abs/2509.24615">arXiv</a></p></div></div>
+<div class="pub-row">
+  <div><p>"Coupling Physics Informed Neural Networks with External Solvers." (2025)<br/><b>Halder R.</b></p></div>
+  <div class="pub-link"><p><a href="http://arxiv.org/abs/2509.24615">arXiv</a></p></div>
+</div>
 
-<div class="pub-row"><div><p>"A Deep-Learning Enhanced Gappy-POD Method: Application in an Industrial Conjugate Heat Transfer Problem." (2025)</p></div><div class="pub-link"><p><a href="http://arxiv.org/abs/2508.20633">arXiv</a></p></div></div>
+<div class="pub-row">
+  <div><p>"A Deep-Learning Enhanced Gappy-POD Method: Application in an Industrial Conjugate Heat Transfer Problem." (2025)</p></div>
+  <div class="pub-link"><p><a href="http://arxiv.org/abs/2508.20633">arXiv</a></p></div>
+</div>
 
-<div class="pub-row"><div><p>"Physics Informed Neural Network Framework for Unsteady Discretized Reduced Order System." (2025)</p></div><div class="pub-link"><p><a href="https://doi.org/10.1016/j.camwa.2025.05.004">CAMWA</a></p></div></div>
+<div class="pub-row">
+  <div><p>"Physics Informed Neural Network Framework for Unsteady Discretized Reduced Order System." (2025)</p></div>
+  <div class="pub-link"><p><a href="https://doi.org/10.1016/j.camwa.2025.05.004">CAMWA</a></p></div>
+</div>
 
-<div class="pub-row"><div><p>"A LSTM-enhanced surrogate model to simulate the dynamics of particle-laden fluid systems." (2024)</p></div><div class="pub-link"><p><a href="https://doi.org/10.1016/j.compfluid.2024.106361">Computers & Fluids</a></p></div></div>
+<div class="pub-row">
+  <div><p>"A LSTM-enhanced surrogate model to simulate the dynamics of particle-laden fluid systems." (2024)</p></div>
+  <div class="pub-link"><p><a href="https://doi.org/10.1016/j.compfluid.2024.106361">Computers & Fluids</a></p></div>
+</div>
 
 <!-- CATEGORY 2 -->
 <div class="category-title">Aeroelasticity & Wave–Structure Interaction</div>
 
-<div class="pub-row"><div><p>"Deep learning-driven nonlinear reduced-order models for predicting wave-structure interaction." (2023)</p></div><div class="pub-link"><p><a href="https://doi.org/10.1016/j.oceaneng.2023.114511">Ocean Engineering</a></p></div></div>
+<div class="pub-row">
+  <div><p>"Deep learning-driven nonlinear reduced-order models for predicting wave-structure interaction." (2023)</p></div>
+  <div class="pub-link"><p><a href="https://doi.org/10.1016/j.oceaneng.2023.114511">Ocean Engineering</a></p></div>
+</div>
 
-<div class="pub-row"><div><p>"Computational Assessment of Transonic Airfoil-Gust Aeroelastic Response." (2022)</p></div><div class="pub-link"><p><a href="https://arc.aiaa.org/doi/abs/10.2514/1.J060344">AIAA J</a></p></div></div>
+<div class="pub-row">
+  <div><p>"Computational Assessment of Transonic Airfoil-Gust Aeroelastic Response." (2022)</p></div>
+  <div class="pub-link"><p><a href="https://arc.aiaa.org/doi/abs/10.2514/1.J060344">AIAA J</a></p></div>
+</div>
 
-<div class="pub-row"><div><p>"A Deep-Learning-Based Nonlinear Reduced Order Model for Airfoil Gust and Aileron Buzz Response." (2020)</p></div><div class="pub-link"><p><a href="https://arc.aiaa.org/doi/abs/10.2514/1.J059027">AIAA J</a></p></div></div>
+<div class="pub-row">
+  <div><p>"A Deep-Learning-Based Nonlinear Reduced Order Model for Airfoil Gust and Aileron Buzz Response." (2020)</p></div>
+  <div class="pub-link"><p><a href="https://arc.aiaa.org/doi/abs/10.2514/1.J059027">AIAA J</a></p></div>
+</div>
 
-<div class="pub-row"><div><p>"A Signal Interpolation Approach Augmented Linear Non-Intrusive Reduced Order Model for Aeroelastic Applications." (2020)</p></div><div class="pub-link"><p><a href="https://arc.aiaa.org/doi/abs/10.2514/1.J058529">AIAA J</a></p></div></div>
+<div class="pub-row">
+  <div><p>"A Signal Interpolation Approach Augmented Linear Non-Intrusive Reduced Order Model for Aeroelastic Applications." (2020)</p></div>
+  <div class="pub-link"><p><a href="https://arc.aiaa.org/doi/abs/10.2514/1.J058529">AIAA J</a></p></div>
+</div>
 
 <!-- CATEGORY 3 -->
 <div class="category-title">Multiphase Flow & Microfluidics</div>
 
-<div class="pub-row"><div><p>"Droplet generation in a microchannel with a controllable deformable wall." (2016)</p></div><div class="pub-link"><p><a href="https://link.springer.com/article/10.1007/s10404-016-1768-4">Microfluidics and Nanofluidics</a></p></div></div>
+<div class="pub-row">
+  <div><p>"Droplet generation in a microchannel with a controllable deformable wall." (2016)</p></div>
+  <div class="pub-link"><p><a href="https://link.springer.com/article/10.1007/s10404-016-1768-4">Microfluidics and Nanofluidics</a></p></div>
+</div>
 
 </div>
 </main>
