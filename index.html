@@ -1,185 +1,139 @@
-<!DOCTYPE html>
-<html lang="en-US">
-<head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Rahul Halder</title>
-
-  <style>
-    :root {
-      --container: 940px;
-      --text: #222;
-      --muted: #555;
-      --line: #e9e9e9;
-      --link: #0b5fff;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      color: var(--text);
-      font: 16px/1.6 system-ui, sans-serif;
-      background: #fff;
-    }
-    a { color: var(--link); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-
-    .wrap { max-width: var(--container); margin: 0 auto; padding: 0 16px; }
-    header { padding: 18px 0 8px; border-bottom: 1px solid var(--line); }
-
-    #site-title { font-size: 28px; margin: 0; }
-
-    .banner img { width: 100%; border-radius: 6px; }
-
-    nav ul { display: flex; gap: 16px; list-style: none; padding: 0; }
-
-    main { padding: 20px 0; }
-
-    .pub-category {
-      margin-top: 30px;
-    }
-
-    .pub-category h3 {
-      border-bottom: 2px solid var(--line);
-      padding-bottom: 6px;
-    }
-
-    .pub-row {
-      display: grid;
-      grid-template-columns: 1fr 180px;
-      gap: 12px;
-      padding: 10px 0;
-      border-bottom: 1px dashed var(--line);
-    }
-
-    .about {
-      display: flex; gap: 16px;
-      padding: 14px;
-      border: 1px solid var(--line);
-      border-radius: 12px;
-      background: #fafafa;
-      margin-top: 30px;
-    }
-
-    .about img {
-      width: 120px; height: 120px;
-      border-radius: 10px;
-    }
-  </style>
-</head>
-
-<body>
-
-<header>
-  <div class="wrap">
-    <h1 id="site-title">Rahul Halder</h1>
-
-    <div class="banner">
-      <img src="/wp-content/uploads/2020/05/pod_deim.gif">
-    </div>
-
-    <nav>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/research-projects/">Research</a></li>
-        <li><a href="/spidey/">Future Work</a></li>
-        <li><a href="/fun-projects/">Academic Activity</a></li>
-        <li><a href="/wp-content/uploads/2020/05/RahulCV.pdf">CV</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+<!-- ONLY showing the modified parts -->
 
 <main class="wrap">
+  <h2>Home</h2>
+  <div class="entry">
 
-<h2>Journal Publications</h2>
+    <!-- (your intro unchanged) -->
 
-<p>
-<a href="https://scholar.google.com.sg/citations?user=uIe-AjkAAAAJ">Google Scholar</a> ·
-<a href="https://www.researchgate.net/profile/Rahul-Halder">ResearchGate</a> ·
-<a href="https://www.linkedin.com/in/rahul-halder-8b964b105/">LinkedIn</a>
-</p>
+    <hr/>
 
-<!-- ================= CORE ================= -->
-<div class="pub-category">
-<h3>Reduced Order Modeling & Scientific Machine Learning</h3>
+    <h2>Journal Publications</h2>
+    <p>
+      <a href="https://scholar.google.com.sg/citations?user=uIe-AjkAAAAJ&hl=en" target="_blank">Google Scholar</a>
+      · <a href="https://www.researchgate.net/profile/Rahul-Halder" target="_blank">ResearchGate</a>
+      · <a href="https://www.linkedin.com/in/rahul-halder-8b964b105/" target="_blank">LinkedIn</a>
+    </p>
 
-<div class="pub-row">
-<div>Model Order Reduction of Cerebrovascular Hemodynamics Using POD–Galerkin and Reservoir Computing (2026)<br><b>Halder R.</b></div>
-<div><a href="https://arxiv.org/abs/2603.18837">arXiv</a></div>
-</div>
+    <!-- ================= CATEGORY 1 ================= -->
+    <h3><strong>Reduced Order Modeling & Scientific Machine Learning</strong></h3>
 
-<div class="pub-row">
-<div>Coupling Physics Informed Neural Networks with External Solvers (2025)<br><b>Halder R.</b></div>
-<div><a href="http://arxiv.org/abs/2509.24615">arXiv</a></div>
-</div>
+    <div class="pub-row">
+      <div>
+        <p>"Model Order Reduction of Cerebrovascular Hemodynamics Using POD–Galerkin and Reservoir Computing-based Approach" (2026)<br/>
+        <b>Halder R.</b>, Hajisharifi A., Bakhshaei K., Rozza G.</p>
+      </div>
+      <div class="pub-link">
+        <p><a href="https://arxiv.org/abs/2603.18837" target="_blank">arXiv</a></p>
+      </div>
+    </div>
 
-<div class="pub-row">
-<div>Deep-Learning Enhanced Gappy-POD Method (2025)</div>
-<div><a href="http://arxiv.org/abs/2508.20633">arXiv</a></div>
-</div>
+    <div class="pub-row">
+      <div>
+        <p>"Coupling Physics Informed Neural Networks with External Solvers." (2025)<br/>
+        <b>Halder R.</b>, Stabile G., Rozza G.</p>
+      </div>
+      <div class="pub-link">
+        <p><a href="http://arxiv.org/abs/2509.24615" target="_blank">arXiv</a></p>
+      </div>
+    </div>
 
-<div class="pub-row">
-<div>PINN Framework for Unsteady Reduced Order Systems (2025)</div>
-<div><a href="https://doi.org/10.1016/j.camwa.2025.05.004">CAMWA</a></div>
-</div>
+    <div class="pub-row">
+      <div>
+        <p>"A Deep-Learning Enhanced Gappy-POD Method..." (2025)<br/>
+        Hajisharifi A., <b>Halder R.</b>, et al.</p>
+      </div>
+      <div class="pub-link">
+        <p><a href="http://arxiv.org/abs/2508.20633" target="_blank">arXiv</a></p>
+      </div>
+    </div>
 
-<div class="pub-row">
-<div>LSTM-enhanced surrogate for particle-laden flows (2024)</div>
-<div><a href="https://doi.org/10.1016/j.compfluid.2024.106361">Comp. Fluids</a></div>
-</div>
+    <div class="pub-row">
+      <div>
+        <p>"Physics Informed Neural Network Framework..." (2025)<br/>
+        <b>Halder R.</b>, Stabile G., Rozza G.</p>
+      </div>
+      <div class="pub-link">
+        <p><a href="https://doi.org/10.1016/j.camwa.2025.05.004" target="_blank">CAMWA</a></p>
+      </div>
+    </div>
 
-</div>
+    <div class="pub-row">
+      <div>
+        <p>"LSTM-enhanced surrogate model..." (2024)<br/>
+        Hajisharifi A., <b>Halder R.</b>, et al.</p>
+      </div>
+      <div class="pub-link">
+        <p><a href="https://doi.org/10.1016/j.compfluid.2024.106361" target="_blank">Computers & Fluids</a></p>
+      </div>
+    </div>
 
-<!-- ================= AERO ================= -->
-<div class="pub-category">
-<h3>Aeroelasticity & Fluid-Structure Interaction</h3>
+    <!-- ================= CATEGORY 2 ================= -->
+    <h3><strong>Aeroelasticity & Wave–Structure Interaction</strong></h3>
 
-<div class="pub-row">
-<div>Wave-structure interaction ROM (2023)</div>
-<div><a href="https://doi.org/10.1016/j.oceaneng.2023.114511">Ocean Eng.</a></div>
-</div>
+    <div class="pub-row">
+      <div>
+        <p>"Deep learning-driven nonlinear ROM for wave-structure interaction." (2023)<br/>
+        <b>Rahul Halder</b>, et al.</p>
+      </div>
+      <div class="pub-link">
+        <p><a href="https://doi.org/10.1016/j.oceaneng.2023.114511" target="_blank">Ocean Engineering</a></p>
+      </div>
+    </div>
 
-<div class="pub-row">
-<div>Transonic Airfoil-Gust Aeroelastic Response (2022)</div>
-<div><a href="https://arc.aiaa.org/doi/abs/10.2514/1.J060344">AIAA J</a></div>
-</div>
+    <div class="pub-row">
+      <div>
+        <p>"Transonic Airfoil-Gust Aeroelastic Response." (2022)<br/>
+        <b>Rahul Halder</b>, et al.</p>
+      </div>
+      <div class="pub-link">
+        <p><a href="https://arc.aiaa.org/doi/abs/10.2514/1.J060344" target="_blank">AIAA J</a></p>
+      </div>
+    </div>
 
-<div class="pub-row">
-<div>Nonlinear ROM for Airfoil Buzz (2020)</div>
-<div><a href="https://arc.aiaa.org/doi/abs/10.2514/1.J059027">AIAA J</a></div>
-</div>
+    <div class="pub-row">
+      <div>
+        <p>"Nonlinear Reduced Order Model for Airfoil Buzz." (2020)<br/>
+        <b>Rahul Halder</b>, et al.</p>
+      </div>
+      <div class="pub-link">
+        <p><a href="https://arc.aiaa.org/doi/abs/10.2514/1.J059027" target="_blank">AIAA J</a></p>
+      </div>
+    </div>
 
-<div class="pub-row">
-<div>Signal Interpolation ROM (2020)</div>
-<div><a href="https://arc.aiaa.org/doi/abs/10.2514/1.J058529">AIAA J</a></div>
-</div>
+    <div class="pub-row">
+      <div>
+        <p>"Signal Interpolation ROM..." (2020)<br/>
+        <b>Rahul Halder</b>, et al.</p>
+      </div>
+      <div class="pub-link">
+        <p><a href="https://arc.aiaa.org/doi/abs/10.2514/1.J058529" target="_blank">AIAA J</a></p>
+      </div>
+    </div>
 
-</div>
+    <!-- ================= CATEGORY 3 ================= -->
+    <h3><strong>Multiphase Flow & Microfluidics</strong></h3>
 
-<!-- ================= MICRO ================= -->
-<div class="pub-category">
-<h3>Multiphase Flow & Microfluidics</h3>
+    <div class="pub-row">
+      <div>
+        <p>"Droplet generation in a microchannel..." (2016)<br/>
+        Abhishekh Raj, <b>Rahul Halder</b>, Ashis Kumar Sen</p>
+      </div>
+      <div class="pub-link">
+        <p><a href="https://link.springer.com/article/10.1007/s10404-016-1768-4" target="_blank">Microfluidics</a></p>
+      </div>
+    </div>
 
-<div class="pub-row">
-<div>Droplet generation in deformable microchannels (2016)</div>
-<div><a href="https://link.springer.com/article/10.1007/s10404-016-1768-4">Microfluidics</a></div>
-</div>
-
-</div>
-
+  </div>
 </main>
 
-<div class="wrap">
+<!-- UPDATED ABOUT SECTION -->
 <section class="about">
-<img src="/wp-content/uploads/2020/05/Myimage.jpg">
-<div>
-<strong>Rahul Halder</strong> — Postdoc at SISSA.<br><br>
+  <img src="/wp-content/uploads/2020/05/Myimage.jpg">
+  <div>
+    <strong>Rahul Halder</strong> — Postdoc at SISSA. I develop data-driven and physics-based reduced-order models for multiphysics problems.<br/><br/>
 
-<strong>Expertise:</strong> Model Order Reduction, Scientific Machine Learning, Computational Mechanics.<br>
-<strong>Application Areas:</strong> Biomedical flows, industrial systems, aeroelastic and wave–structure interaction.
-</div>
+    <strong>Expertise:</strong> Model Order Reduction, Scientific Machine Learning, Computational Mechanics.<br/>
+    <strong>Application Areas:</strong> Biomedical flows, industrial multiphysics systems, and aeroelastic/wave–structure interaction problems.
+  </div>
 </section>
-</div>
-
-</body>
-</html>
